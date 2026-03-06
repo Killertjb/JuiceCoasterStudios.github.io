@@ -3,28 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services Portfolio</title>
+    <title>Juice Coster Studio | Music Production & Creative Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Our Services Portfolio</h1>
-    
-    <section id="ploeter-service">
-        <h2>Ploeter Printing Service</h2>
-        <p>Your one-stop solution for all printing needs.</p>
-        <a href="LINK_TO_PLOETER_SERVICE">Learn more about Ploeter Printing</a>
-    </section>
-    
-    <section id="newhorizon-artist">
-        <h2>NewHorizonSky Artist</h2>
-        <p>Beautiful artworks that inspire and transform.</p>
-        <a href="LINK_TO_NEW_HORIZON_SKY">Explore NewHorizonSky's works</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Juice Coster Studio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Juice Coster Studio</h1>
+            <p class="hero-subtitle">Where Creativity Meets Excellence</p>
+            <p class="hero-description">Music Production | Artist Management | Print Services</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
     </section>
 
-    <section id="moowit-artist">
-        <h2>Moowit Artist</h2>
-        <p>Innovative art that speaks to the soul.</p>
-        <a href="LINK_TO_MOOWIT">Discover Moowit's creations</a>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                
+                <!-- Music Studio Card -->
+                <div class="service-card">
+                    <div class="card-icon">🎵</div>
+                    <h3>Music Production</h3>
+                    <p>Professional recording, mixing, and mastering services for your next hit.</p>
+                    <a href="JCS/Pages/home.html" class="card-button">Learn More</a>
+                </div>
+
+                <!-- NHS Artist Card -->
+                <div class="service-card">
+                    <div class="card-icon">🎤</div>
+                    <h3>NHS</h3>
+                    <p>Discover the unique sound and style of our featured artist NHS.</p>
+                    <a href="NHS/Pages/home.html" class="card-button">View Profile</a>
+                </div>
+
+                <!-- Moowit Artist Card -->
+                <div class="service-card">
+                    <div class="card-icon">🎧</div>
+                    <h3>Moowit</h3>
+                    <p>Experience the creative world of Moowit's music and artistry.</p>
+                    <a href="Moowit/Pages/home.html" class="card-button">View Profile</a>
+                </div>
+
+                <!-- Printing Service Card -->
+                <div class="service-card">
+                    <div class="card-icon">🖨️</div>
+                    <h3>Ploeter Printing</h3>
+                    <p>High-quality printing services for all your creative and business needs.</p>
+                    <a href="Ploeter/Pages/home.html" class="card-button">View Services</a>
+                </div>
+
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">Ready to start your next project? Contact us today.</p>
+            <a href="JCS/Pages/contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Juice Coster Studio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Email">✉️</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
