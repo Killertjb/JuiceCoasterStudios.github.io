@@ -1,117 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ploeter Printing Service</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
-        .product-item { border: 1px solid #ccc; padding: 16px; text-align: center; }
-        .product-item img { max-width: 100%; height: auto; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploeter Printing | Professional Print Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ploeter Printing Service</h1>
-    <div class="product-grid">
-        <div class="product-item">
-            <img src="/images/product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Description of Product 1.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-link">← Back to Juice Coster Studio</a>
+            <div class="logo">Ploeter</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="product-item">
-            <img src="/images/product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Description of Product 2.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-minimal">
+        <div class="hero-content-minimal">
+            <h1 class="brand-title">Ploeter Printing</h1>
+            <p class="brand-tagline">Precision. Quality. Excellence.</p>
         </div>
-        <div class="product-item">
-            <img src="/images/product3.jpg" alt="Product 3">
-            <h2>Product 3</h2>
-            <p>Description of Product 3.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="content-wrapper">
+            <h2 class="section-heading">What We Do</h2>
+            <p class="about-text">
+                We specialize in high-quality printing solutions for businesses and individuals. 
+                From business cards to large format prints, we bring your vision to life with 
+                precision and attention to detail.
+            </p>
         </div>
-        <div class="product-item">
-            <img src="/images/product4.jpg" alt="Product 4">
-            <h2>Product 4</h2>
-            <p>Description of Product 4.</p>
+    </section>
+
+    <!-- Services Gallery -->
+    <section class="services-gallery">
+        <div class="content-wrapper">
+            <h2 class="section-heading">Our Services</h2>
+            
+            <div class="gallery-grid">
+                <!-- Service Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="placeholder-icon">📇</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Business Cards</h3>
+                        <p>Premium business cards that make lasting impressions</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="placeholder-icon">📄</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Flyers & Brochures</h3>
+                        <p>Eye-catching promotional materials for your business</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="placeholder-icon">🖼️</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Posters & Banners</h3>
+                        <p>Large format printing for maximum impact</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span class="placeholder-icon">📦</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Packaging Design</h3>
+                        <p>Custom packaging solutions that stand out</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="placeholder-icon">👕</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Apparel Printing</h3>
+                        <p>Custom t-shirts, hoodies, and merchandise</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 6 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="placeholder-icon">🎨</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Custom Projects</h3>
+                        <p>Unique printing solutions tailored to your needs</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-item">
-            <img src="/images/product5.jpg" alt="Product 5">
-            <h2>Product 5</h2>
-            <p>Description of Product 5.</p>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="content-wrapper">
+            <h2 class="section-heading">Our Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>We discuss your vision and requirements</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Design</h3>
+                    <p>Our team creates or refines your design</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Production</h3>
+                    <p>High-quality printing with attention to detail</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Delivery</h3>
+                    <p>Fast and reliable delivery to your door</p>
+                </div>
+            </div>
         </div>
-        <div class="product-item">
-            <img src="/images/product6.jpg" alt="Product 6">
-            <h2>Product 6</h2>
-            <p>Description of Product 6.</p>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="cta-section">
+        <div class="content-wrapper">
+            <h2 class="cta-title">Ready to Start Your Project?</h2>
+            <p class="cta-text">Get in touch with us today for a free consultation and quote.</p>
+            <div class="cta-buttons">
+                <a href="mailto:info@ploeterprinting.com" class="btn-primary">Get a Quote</a>
+                <a href="tel:+1234567890" class="btn-secondary">Call Us</a>
+            </div>
         </div>
-        <div class="product-item">
-            <img src="/images/product7.jpg" alt="Product 7">
-            <h2>Product 7</h2>
-            <p>Description of Product 7.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="content-wrapper">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ploeter Printing</h3>
+                    <p>Quality printing services since 2024</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: info@ploeterprinting.com</p>
+                    <p>Phone: +27 123 456 789</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">👍</a>
+                        <a href="#" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ploeter Printing. Part of Juice Coster Studio.</p>
+            </div>
         </div>
-        <div class="product-item">
-            <img src="/images/product8.jpg" alt="Product 8">
-            <h2>Product 8</h2>
-            <p>Description of Product 8.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product9.jpg" alt="Product 9">
-            <h2>Product 9</h2>
-            <p>Description of Product 9.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product10.jpg" alt="Product 10">
-            <h2>Product 10</h2>
-            <p>Description of Product 10.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product11.jpg" alt="Product 11">
-            <h2>Product 11</h2>
-            <p>Description of Product 11.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product12.jpg" alt="Product 12">
-            <h2>Product 12</h2>
-            <p>Description of Product 12.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product13.jpg" alt="Product 13">
-            <h2>Product 13</h2>
-            <p>Description of Product 13.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product14.jpg" alt="Product 14">
-            <h2>Product 14</h2>
-            <p>Description of Product 14.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product15.jpg" alt="Product 15">
-            <h2>Product 15</h2>
-            <p>Description of Product 15.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product16.jpg" alt="Product 16">
-            <h2>Product 16</h2>
-            <p>Description of Product 16.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product17.jpg" alt="Product 17">
-            <h2>Product 17</h2>
-            <p>Description of Product 17.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product18.jpg" alt="Product 18">
-            <h2>Product 18</h2>
-            <p>Description of Product 18.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product19.jpg" alt="Product 19">
-            <h2>Product 19</h2>
-            <p>Description of Product 19.</p>
-        </div>
-        <div class="product-item">
-            <img src="/images/product20.jpg" alt="Product 20">
-            <h2>Product 20</h2>
-            <p>Description of Product 20.</p>
-        </div>
-    </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
