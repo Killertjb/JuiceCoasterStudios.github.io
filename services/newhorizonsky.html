@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Horizon Sky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .album {
+            position: relative;
+            overflow: hidden;
+        }
+        .album img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .album:hover .overlay {
+            opacity: 1;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Horizon Sky - Albums and Singles</h1>
+    <div class="grid">
+        <!-- Album 1 -->
+        <div class="album">
+            <img src="path_to_album_cover_1.jpg" alt="Album Cover 1">
+            <div class="overlay">
+                <div class="links">
+                    <a href="https://youtube.com/artist_link_1">YouTube</a>
+                    <a href="https://spotify.com/artist_link_1">Spotify</a>
+                    <a href="https://apple.com/artist_link_1">Apple Music</a>
+                    <a href="https://amazon.com/artist_link_1">Amazon Music</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for Album 2 to Album 20 -->
+        <!-- Example for Album 2 -->
+        <div class="album">
+            <img src="path_to_album_cover_2.jpg" alt="Album Cover 2">
+            <div class="overlay">
+                <div class="links">
+                    <a href="https://youtube.com/artist_link_2">YouTube</a>
+                    <a href="https://spotify.com/artist_link_2">Spotify</a>
+                    <a href="https://apple.com/artist_link_2">Apple Music</a>
+                    <a href="https://amazon.com/artist_link_2">Amazon Music</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more albums as needed -->
+        <!-- Album 20 -->
+        <div class="album">
+            <img src="path_to_album_cover_20.jpg" alt="Album Cover 20">
+            <div class="overlay">
+                <div class="links">
+                    <a href="https://youtube.com/artist_link_20">YouTube</a>
+                    <a href="https://spotify.com/artist_link_20">Spotify</a>
+                    <a href="https://apple.com/artist_link_20">Apple Music</a>
+                    <a href="https://amazon.com/artist_link_20">Amazon Music</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
