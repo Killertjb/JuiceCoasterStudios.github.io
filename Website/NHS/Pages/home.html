@@ -3,101 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Horizon Sky</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 0;
-            padding: 20px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .album {
-            position: relative;
-            overflow: hidden;
-        }
-        .album img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: opacity 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .album:hover .overlay {
-            opacity: 1;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-        }
-        .links a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-    </style>
+    <title>Ploeter Printing | Professional Print Services</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>New Horizon Sky - Albums and Singles</h1>
-    <div class="grid">
-        <!-- Album 1 -->
-        <div class="album">
-            <img src="path_to_album_cover_1.jpg" alt="Album Cover 1">
-            <div class="overlay">
-                <div class="links">
-                    <a href="https://youtube.com/artist_link_1">YouTube</a>
-                    <a href="https://spotify.com/artist_link_1">Spotify</a>
-                    <a href="https://apple.com/artist_link_1">Apple Music</a>
-                    <a href="https://amazon.com/artist_link_1">Amazon Music</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-link">← Back to Juice Coster Studio</a>
+            <div class="logo">Ploeter</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-minimal">
+        <div class="hero-content-minimal">
+            <h1 class="brand-title">Ploeter Printing</h1>
+            <p class="brand-tagline">Precision. Quality. Excellence.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-minimal">
+        <div class="container-minimal">
+            <h2 class="section-heading">What We Do</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Business Cards</h3>
+                    <p>Premium quality cards that make lasting impressions</p>
+                </div>
+                <div class="service-item">
+                    <h3>Posters & Banners</h3>
+                    <p>Large format printing for events and promotions</p>
+                </div>
+                <div class="service-item">
+                    <h3>Brochures & Flyers</h3>
+                    <p>Professional marketing materials for your business</p>
+                </div>
+                <div class="service-item">
+                    <h3>Custom Merchandise</h3>
+                    <p>T-shirts, mugs, and branded promotional items</p>
+                </div>
+                <div class="service-item">
+                    <h3>Album Artwork</h3>
+                    <p>High-quality prints for music releases and portfolios</p>
+                </div>
+                <div class="service-item">
+                    <h3>Packaging Design</h3>
+                    <p>Custom packaging solutions for products</p>
                 </div>
             </div>
         </div>
-        <!-- Repeat for Album 2 to Album 20 -->
-        <!-- Example for Album 2 -->
-        <div class="album">
-            <img src="path_to_album_cover_2.jpg" alt="Album Cover 2">
-            <div class="overlay">
-                <div class="links">
-                    <a href="https://youtube.com/artist_link_2">YouTube</a>
-                    <a href="https://spotify.com/artist_link_2">Spotify</a>
-                    <a href="https://apple.com/artist_link_2">Apple Music</a>
-                    <a href="https://amazon.com/artist_link_2">Amazon Music</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container-minimal">
+            <h2 class="section-heading">Our Work</h2>
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #e5e7eb;">
+                        <div class="placeholder-text">Business Cards</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Premium Business Cards</h4>
+                        <p>Matte finish, 350gsm</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #dbeafe;">
+                        <div class="placeholder-text">Poster Design</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Event Posters</h4>
+                        <p>A1 size, full color</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #fce7f3;">
+                        <div class="placeholder-text">Album Art</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Album Artwork</h4>
+                        <p>High-res print, glossy</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #fef3c7;">
+                        <div class="placeholder-text">Brochure</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Tri-fold Brochures</h4>
+                        <p>Double-sided, 200gsm</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #d1fae5;">
+                        <div class="placeholder-text">Merchandise</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Custom T-Shirts</h4>
+                        <p>Screen printing, all sizes</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-color: #e0e7ff;">
+                        <div class="placeholder-text">Banner</div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Vinyl Banners</h4>
+                        <p>Weather-resistant, custom sizes</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Add more albums as needed -->
-        <!-- Album 20 -->
-        <div class="album">
-            <img src="path_to_album_cover_20.jpg" alt="Album Cover 20">
-            <div class="overlay">
-                <div class="links">
-                    <a href="https://youtube.com/artist_link_20">YouTube</a>
-                    <a href="https://spotify.com/artist_link_20">Spotify</a>
-                    <a href="https://apple.com/artist_link_20">Apple Music</a>
-                    <a href="https://amazon.com/artist_link_20">Amazon Music</a>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container-minimal">
+            <h2 class="section-heading">Our Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>We discuss your vision and requirements</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Design</h3>
+                    <p>Create or refine your artwork</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Production</h3>
+                    <p>High-quality printing with attention to detail</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Delivery</h3>
+                    <p>Fast turnaround and reliable delivery</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-minimal">
+        <div class="container-minimal">
+            <h2 class="section-heading">Get A Quote</h2>
+            <p class="contact-intro">Ready to bring your ideas to print? Let's talk.</p>
+            <div class="contact-info">
+                <div class="contact-method">
+                    <span class="icon">📧</span>
+                    <a href="mailto:info@ploeter.com">info@ploeter.com</a>
+                </div>
+                <div class="contact-method">
+                    <span class="icon">📱</span>
+                    <a href="tel:+1234567890">+27 123 456 7890</a>
+                </div>
+                <div class="contact-method">
+                    <span class="icon">📍</span>
+                    <span>Your City, South Africa</span>
+                </div>
+            </div>
+            <a href="mailto:info@ploeter.com" class="cta-minimal">Request Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="container-minimal">
+            <p>&copy; 2024 Ploeter Printing. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../../index.html">Home</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
