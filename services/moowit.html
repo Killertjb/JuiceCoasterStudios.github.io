@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moowit Artist Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .album {
+            position: relative;
+            overflow: hidden;
+        }
+        .album img {
+            width: 100%;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s;
+        }
+        .album:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Moowit - Artist Page</h1>
+<div class="grid-container">
+    <!-- Example album cover (repeat for 20 times with different links and images) -->
+    <div class="album">
+        <img src="cover1.jpg" alt="Album 1">
+        <div class="overlay">
+            <a href="youtube_link_1" style="color: white; margin: 0 5px;">YouTube</a>
+            <a href="spotify_link_1" style="color: white; margin: 0 5px;">Spotify</a>
+            <a href="applemusic_link_1" style="color: white; margin: 0 5px;">Apple Music</a>
+            <a href="amazonmusic_link_1" style="color: white; margin: 0 5px;">Amazon Music</a>
+        </div>
+    </div>
+    <!-- Repeat similar structure for albums 2 to 20 -->
+</div>
+
+</body>
+</html>
