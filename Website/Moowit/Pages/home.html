@@ -3,63 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moowit Artist Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-            margin: 0;
-            padding: 20px;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        .album {
-            position: relative;
-            overflow: hidden;
-        }
-        .album img {
-            width: 100%;
-            display: block;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            opacity: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.3s;
-        }
-        .album:hover .overlay {
-            opacity: 1;
-        }
-    </style>
+    <title>Moowit | Christian EDM Artist</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Moowit - Artist Page</h1>
-<div class="grid-container">
-    <!-- Example album cover (repeat for 20 times with different links and images) -->
-    <div class="album">
-        <img src="cover1.jpg" alt="Album 1">
-        <div class="overlay">
-            <a href="youtube_link_1" style="color: white; margin: 0 5px;">YouTube</a>
-            <a href="spotify_link_1" style="color: white; margin: 0 5px;">Spotify</a>
-            <a href="applemusic_link_1" style="color: white; margin: 0 5px;">Apple Music</a>
-            <a href="amazonmusic_link_1" style="color: white; margin: 0 5px;">Amazon Music</a>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../../index.html" class="nav-logo">MOOWIT</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#music" class="nav-link">Music</a></li>
+                <li><a href="#live" class="nav-link">Live</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <!-- Repeat similar structure for albums 2 to 20 -->
-</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Christian EDM Artist</div>
+            <h1 class="hero-title">MOOWIT</h1>
+            <p class="hero-verse">"Make a joyful noise unto the Lord" - Psalm 100:1</p>
+            <p class="hero-subtitle">Spreading Light Through Sound</p>
+            <div class="hero-buttons">
+                <a href="#music" class="btn btn-primary">
+                    <span>🎵</span> Listen Now
+                </a>
+                <a href="#live" class="btn btn-secondary">
+                    <span>🎧</span> Live Sets
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="cross-icon">✝</div>
+                        <span>MOOWIT</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">The Mission</h2>
+                    <div class="title-underline"></div>
+                    <p class="about-text">
+                        Moowit is on a mission to bring the message of hope, faith, and love to the dance floor. 
+                        Combining powerful EDM beats with uplifting Christian themes, every track is designed to 
+                        inspire and energize the soul.
+                    </p>
+                    <p class="about-text">
+                        From worship anthems to high-energy festival bangers, Moowit creates music that celebrates 
+                        faith while making you move. It's not just about the drop—it's about lifting spirits and 
+                        bringing people together in praise.
+                    </p>
+                    <div class="mission-points">
+                        <div class="mission-item">
+                            <span class="mission-icon">🙏</span>
+                            <h4>Faith-Driven</h4>
+                            <p>Every beat carries a message</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">⚡</span>
+                            <h4>High Energy</h4>
+                            <p>Music that moves body & soul</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-icon">💫</span>
+                            <h4>Uplifting</h4>
+                            <p>Spreading positivity & hope</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2 class="section-title centered">Latest Tracks</h2>
+            <div class="title-underline centered"></div>
+            <p class="section-subtitle">Worship meets the dance floor</p>
+            
+            <div class="music-grid">
+                <!-- Track 1 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="track-icon">✝</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Risen</h3>
+                        <p class="track-genre">Progressive House</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 2 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="track-icon">🙌</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Grace Overflow</h3>
+                        <p class="track-genre">Future Bass</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 3 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="track-icon">⚡</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Holy Fire</h3>
+                        <p class="track-genre">Big Room</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 4 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="track-icon">💫</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Redeemed</h3>
+                        <p class="track-genre">Melodic Dubstep</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 5 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="track-icon">🕊️</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Spirit Move</h3>
+                        <p class="track-genre">Trance</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 6 -->
+                <div class="track-card">
+                    <div class="track-cover">
+                        <div class="cover-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span class="track-icon">🌟</span>
+                        </div>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Breakthrough</h3>
+                        <p class="track-genre">Electro House</p>
+                        <div class="track-links">
+                            <a href="#" class="track-link">🎵 Spotify</a>
+                            <a href="#" class="track-link">🍎 Apple</a>
+                            <a href="#" class="track-link">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Section -->
+    <section id="live" class="live">
+        <div class="container">
+            <h2 class="section-title centered">Live Performances</h2>
+            <div class="title-underline centered"></div>
+            <p class="section-subtitle">Experience worship in a whole new way</p>
+            
+            <div class="live-grid">
+                <!-- Live Set 1 -->
+                <div class="live-card">
+                    <div class="live-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="live-icon">🎧</span>
+                        </div>
+                        <div class="live-badge">LIVE SET</div>
+                    </div>
+                    <div class="live-info">
+                        <h3>Worship Night 2024</h3>
+                        <p class="live-date">📅 March 15, 2024</p>
+                        <p class="live-location">📍 City Church Arena</p>
+                        <a href="#" class="live-link">Watch Replay →</a>
+                    </div>
+                </div>
+
+                <!-- Live Set 2 -->
+                <div class="live-card">
+                    <div class="live-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="live-icon">🔥</span>
+                        </div>
+                        <div class="live-badge">LIVE SET</div>
+                    </div>
+                    <div class="live-info">
+                        <h3>Festival of Faith</h3>
+                        <p class="live-date">📅 January 20, 2024</p>
+                        <p class="live-location">📍 Open Air Stadium</p>
+                        <a href="#" class="live-link">Watch Replay →</a>
+                    </div>
+                </div>
+
+                <!-- Live Set 3 -->
+                <div class="live-card">
+                    <div class="live-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="live-icon">⚡</span>
+                        </div>
+                        <div class="live-badge upcoming">UPCOMING</div>
+                    </div>
+                    <div class="live-info">
+                        <h3>Summer Praise Party</h3>
+                        <p class="live-date">📅 June 10, 2024</p>
+                        <p class="live-location">📍 Beachfront Stage</p>
+                        <a href="#" class="live-link">Get Tickets →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title centered">What People Say</h2>
+            <div class="title-underline centered"></div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "Moowit's music changed my perspective on worship. It's powerful, energetic, and deeply spiritual!"
+                    </p>
+                    <p class="testimonial-author">- Sarah M.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "Finally, EDM that speaks to my faith! Every track is a blessing and a banger at the same time."
+                    </p>
+                    <p class="testimonial-author">- David K.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "The live sets are incredible! You can feel the Holy Spirit moving through the music."
+                    </p>
+                    <p class="testimonial-author">- Grace L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title centered">Let's Connect</h2>
+            <div class="title-underline centered"></div>
+            <p class="contact-subtitle">For bookings, collaborations, or prayer requests</p>
+            
+            <div class="contact-content">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:moowit@juicecoster.com">moowit@juicecoster.com
+
 
 </body>
 </html>
