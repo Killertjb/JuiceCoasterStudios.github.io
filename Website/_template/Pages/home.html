@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPLACE: one-sentence description of this artist or service.">
+    <!-- REPLACE the name after the "|" -->
+    <title>NAME | Official Page</title>
+    <link rel="stylesheet" href="../../shared/artist.css">
+</head>
+<body>
+    <!--
+      NEW LISTING TEMPLATE
+      1. Copy the whole Website/_template folder to Website/<YourName>
+      2. Search this file for "REPLACE" and "NAME" and fill them in
+      3. Add an entry for it in data/site.js so it appears on the home page
+      Paths below (../../shared, ../../../index.html) work as long as the page
+      stays at Website/<YourName>/Pages/home.html.
+    -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../../../index.html" class="nav-logo">NAME</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">NAME</h1>
+            <p class="hero-subtitle">REPLACE: short tagline</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About NAME</h2>
+            <p class="about-text">REPLACE: a short paragraph about this artist or service.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title centered">Get In Touch</h2>
+            <p class="contact-subtitle">REPLACE: e.g. For bookings and collaborations</p>
+            <div class="contact-content">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:REPLACE@example.com">REPLACE@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span data-year>2026</span> NAME. All rights reserved.</p>
+            <p class="footer-credit">Part of <a href="../../../index.html">Juice Coster Studio</a></p>
+        </div>
+    </footer>
+
+    <script src="../../shared/common.js"></script>
+</body>
+</html>

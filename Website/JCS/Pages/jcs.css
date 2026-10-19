@@ -1,0 +1,100 @@
+/* Extra styles for the Juice Coster Studio (JCS) pages.
+   Base look comes from the site-wide ../../../styles.css */
+
+.page-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 0.75rem;
+}
+
+.page-hero p {
+    max-width: 640px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.95;
+}
+
+.page-hero .cta-button { animation: none; }
+
+.section { padding: 70px 20px; }
+.section.alt { background-color: var(--bg-light); }
+
+.process {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    color: var(--text-light);
+}
+
+.process li { margin-bottom: 0.9rem; padding-left: 0.4rem; }
+.process strong { color: var(--text-dark); }
+
+/* Contact page */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1.75rem;
+    text-align: center;
+}
+
+.contact-card h3 { margin-bottom: 0.75rem; }
+
+.contact-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-card a:hover { text-decoration: underline; }
+
+.contact-form {
+    max-width: 640px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label { font-weight: 600; font-size: 0.9rem; }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover { background: var(--secondary-color); }
+
+.form-note {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
