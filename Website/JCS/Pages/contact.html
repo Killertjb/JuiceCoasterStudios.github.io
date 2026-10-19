@@ -1,132 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-
-<link rel="stylesheet" href="style.css">
-
-<style>
-/* Contact page specific styles */
-.contact-section{
-padding:80px 40px;
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:40px;
-}
-
-.contact-card{
-border:1px solid #eee;
-padding:30px;
-}
-
-.contact-card a{
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-.contact-form{
-margin-top:60px;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-padding:12px;
-border:1px solid #ddd;
-width:100%;
-}
-
-.contact-form button{
-padding:12px;
-background:black;
-color:white;
-border:none;
-cursor:pointer;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Juice Coster Studio</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="jcs.css">
 </head>
-
 <body>
-<!-- HEADER -->
-<header class="header">
-<div class="logo">Juice Coaster Studios</div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>Juice Coster Studio</h1></div>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="home.html">Music Production</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-<a href="contacts.html">Contact</a>
-</nav>
-  
-</header>
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">How To Reach Us</h1>
+            <p class="contact-description">Have a question? Reach out using any of the options below.</p>
 
-<!-- CONTACT SECTION -->
-<section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a id="c-email" href="#">Email us</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>WhatsApp</h3>
+                    <p><a id="c-whatsapp" href="#">Message us</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Social Media</h3>
+                    <p>
+                        <a id="c-instagram" href="#">Instagram</a><br>
+                        <a id="c-facebook" href="#">Facebook</a><br>
+                        <a id="c-tiktok" href="#">TikTok</a>
+                    </p>
+                </div>
+            </div>
 
-<h1>How To Reach Us</h1>
-<p>Have a question? Reach out to us using any of the options below !</p>
+            <form class="contact-form" id="contact-form">
+                <div>
+                    <label for="f-name">Your name</label>
+                    <input id="f-name" type="text" required autocomplete="name">
+                </div>
+                <div>
+                    <label for="f-email">Your email</label>
+                    <input id="f-email" type="email" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="f-message">Message</label>
+                    <textarea id="f-message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <p class="form-note">This opens your email app with the message ready to send.</p>
+            </form>
+        </div>
+    </section>
 
-<div class="contact-grid">
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span data-year>2026</span> Juice Coster Studio. All rights reserved.</p>
+        </div>
+    </footer>
 
-<div class="contact-card">
-<h3>Email</h3>
-<p>
-<a href="mailto:your@email.com"> <!-- Please chage this line to reflect a working email -->
-your@email.com 
-</a>
-</p>
-</div>
+    <script src="../../../data/site.js"></script>
+    <script src="../../shared/common.js"></script>
+    <script>
+        // Contact details live in data/site.js so they only need updating once.
+        (function () {
+            const c = (window.SITE && window.SITE.contact) || {};
+            const set = (id, href, text) => {
+                const a = document.getElementById(id);
+                if (!a || !href || href === '#') return;
+                a.href = href;
+                if (text) a.textContent = text;
+                if (/^https?:/.test(href)) { a.target = '_blank'; a.rel = 'noopener'; }
+            };
 
-<div class="contact-card">
-<h3>WhatsApp</h3>
-<p>
-<a href="https://wa.me/27123456789"> <!-- Please chage this line to reflect a working Whatsapp Number -->
-+27 12 345 6789
-</a>
-</p>
-</div>
+            set('c-email', c.email && 'mailto:' + c.email, c.email);
+            set('c-whatsapp', c.whatsappNumber && 'https://wa.me/' + c.whatsappNumber, c.whatsappDisplay);
+            set('c-instagram', c.instagram);
+            set('c-facebook', c.facebook);
+            set('c-tiktok', c.tiktok);
 
-<div class="contact-card">
-<h3>Social Media</h3>
-<p>
-<a href="#">Instagram</a><br> <!-- Please chage this line to reflect a working Instagram Account-->
-<a href="#">Facebook</a><br> <!-- Please chage this line to reflect a working Facebook Account -->
-<a href="#">TikTok</a> <!-- Please chage this line to reflect a working Tik-Tok Account -->
-</p>
-</div>
-
-</div>
-
-<!-- OPTIONAL CONTACT FORM -->
-<form class="contact-form">
-  
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea rows="5" placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-<p>© 2026 Juice Coaster Studios</p>
-</footer>
-
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const name = document.getElementById('f-name').value.trim();
+                const email = document.getElementById('f-email').value.trim();
+                const message = document.getElementById('f-message').value.trim();
+                const subject = encodeURIComponent('Website enquiry from ' + name);
+                const body = encodeURIComponent(message + '\n\n' + name + '\n' + email);
+                window.location.href = 'mailto:' + (c.email || '') + '?subject=' + subject + '&body=' + body;
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -140,3 +140,40 @@ body {
 }
 
 .hero-
+
+/* ---- Mobile navigation & responsive tweaks ---- */
+.nav-link.active { color: var(--primary); }
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; padding: 6px; }
+
+    .nav-content { position: relative; }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 1rem);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: rgba(15, 23, 42, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 2rem 1rem;
+    }
+
+    .nav-menu.open { display: flex; }
+
+    .nav-menu li { padding: 0.75rem 0; }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .hero-title { font-size: clamp(2rem, 10vw, 3.5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+}

@@ -284,3 +284,65 @@ body {
     }
 }
 
+
+/* ---- Listing filters & card tags ---- */
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 8px 22px;
+    border: 2px solid var(--primary-color);
+    background: var(--white);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.card-tag {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 2px 12px;
+    border-radius: 50px;
+    background: var(--bg-light);
+    color: var(--text-light);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.no-js-note {
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Keyboard focus visibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* The default CTA is white-on-gradient; on white sections it must be filled. */
+.contact .cta-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.contact .cta-button:hover {
+    background-color: var(--secondary-color);
+}
