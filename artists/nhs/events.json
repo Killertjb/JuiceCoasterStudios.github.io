@@ -1,0 +1,14 @@
+{
+  "_help": "Shows and events. date is YYYY-MM-DD; events on or after today show as Upcoming and sort first, older ones become past automatically. link is optional (tickets, replay, etc). Copy the _example into the events list.",
+  "_example": {
+    "title": "Event name",
+    "date": "2026-12-05",
+    "location": "Venue, City",
+    "kind": "Live set",
+    "link": {
+      "label": "Get tickets",
+      "url": "https://..."
+    }
+  },
+  "events": []
+}

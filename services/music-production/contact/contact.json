@@ -1,0 +1,13 @@
+{
+  "_help": "Public contact details shown in the Contact section. Empty values are hidden. Set useSiteContact to true to reuse the studio's details from data/site.json for anything left empty (for services run by the studio itself). whatsapp is digits only with country code, e.g. 27821234567.",
+  "useSiteContact": true,
+  "email": "",
+  "phone": "",
+  "whatsapp": "",
+  "whatsappDisplay": "",
+  "location": "",
+  "hours": "",
+  "bookingUrl": "",
+  "bookingLabel": "Book now",
+  "note": ""
+}

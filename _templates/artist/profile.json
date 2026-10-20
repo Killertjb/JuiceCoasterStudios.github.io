@@ -1,0 +1,60 @@
+{
+  "_help": "Main details for this artist. The page and the home-page card both read this file. Leave unused values empty (\"\" or []); they are simply hidden. status: draft = not shown on the home page, live = shown. Image paths are relative to this folder.",
+  "type": "artist",
+  "slug": "{{SLUG}}",
+  "name": "{{NAME}}",
+  "fullName": "",
+  "badge": "",
+  "tagline": "",
+  "summary": "",
+  "icon": "🎤",
+  "quote": {
+    "text": "",
+    "attribution": ""
+  },
+  "bioTitle": "",
+  "bio": [],
+  "genres": [],
+  "highlights": [],
+  "pillars": [],
+  "images": {
+    "hero": "",
+    "card": "",
+    "portrait": "",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "dark",
+    "accent": "#8b5cf6"
+  },
+  "links": {
+    "spotify": "",
+    "appleMusic": "",
+    "youtube": "",
+    "youtubeMusic": "",
+    "amazonMusic": "",
+    "soundcloud": "",
+    "bandcamp": "",
+    "instagram": "",
+    "tiktok": "",
+    "facebook": "",
+    "x": "",
+    "website": ""
+  },
+  "status": "draft",
+  "_examples": {
+    "highlights": [
+      {
+        "value": "10K+",
+        "label": "Monthly listeners"
+      }
+    ],
+    "pillars": [
+      {
+        "icon": "🙏",
+        "title": "Faith-driven",
+        "text": "Every beat carries a message."
+      }
+    ]
+  }
+}

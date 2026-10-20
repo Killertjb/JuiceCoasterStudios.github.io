@@ -1,0 +1,43 @@
+{
+  "_help": "Main details for this service. The page and the home-page card both read this file. Leave unused values empty (\"\" or []); they are simply hidden. status: draft = not shown on the home page, live = shown. Image paths are relative to this folder.",
+  "type": "service",
+  "slug": "music-production",
+  "name": "Music Production",
+  "fullName": "",
+  "badge": "",
+  "tagline": "From first idea to release day",
+  "summary": "Professional recording, mixing, and mastering services for your next hit.",
+  "icon": "🎵",
+  "established": "",
+  "bioTitle": "What We Do",
+  "bio": [
+    "From first idea to release day: recording, mixing, mastering and everything it takes to build an artist's profile."
+  ],
+  "highlights": [],
+  "images": {
+    "hero": "",
+    "card": "",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "light",
+    "accent": "#2563eb"
+  },
+  "links": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": "",
+    "youtube": "",
+    "whatsapp": "",
+    "website": ""
+  },
+  "status": "live",
+  "_examples": {
+    "highlights": [
+      {
+        "value": "500+",
+        "label": "Orders delivered"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_help": "What this service provides. icon is an emoji; image (optional) replaces the icon. price and link are optional. Copy the _example into the offerings list.",
+  "_example": {
+    "icon": "📇",
+    "title": "Business Cards",
+    "description": "Short description.",
+    "price": "From R250",
+    "image": "",
+    "link": {
+      "label": "Request a quote",
+      "url": ""
+    }
+  },
+  "offerings": [
+    {
+      "icon": "🎙️",
+      "title": "Recording",
+      "description": "Capture your vocals and instruments with a clean, professional sound."
+    },
+    {
+      "icon": "🎚️",
+      "title": "Mixing & Mastering",
+      "description": "Balanced, polished tracks that translate on every speaker and streaming platform."
+    },
+    {
+      "icon": "🚀",
+      "title": "Release Management",
+      "description": "Distributor setup, release scheduling and lyric syncing so your music goes out right."
+    },
+    {
+      "icon": "🎬",
+      "title": "Lyric & Music Videos",
+      "description": "Visuals that give each release a face and keep it moving on social media."
+    },
+    {
+      "icon": "🌟",
+      "title": "Artist Profile Building",
+      "description": "Branding, bios, artwork and social presence that help new artists get noticed."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_help": "Shows and events. date is YYYY-MM-DD; events on or after today show as Upcoming and sort first, older ones become past automatically. link is optional (tickets, replay, etc). Copy the _example into the events list.",
+  "_example": {
+    "title": "Event name",
+    "date": "2026-12-05",
+    "location": "Venue, City",
+    "kind": "Live set",
+    "link": {
+      "label": "Get tickets",
+      "url": "https://..."
+    }
+  },
+  "events": [
+    {
+      "title": "Worship Night 2024",
+      "date": "2024-03-15",
+      "location": "City Church Arena",
+      "kind": "Live set",
+      "link": {
+        "label": "Watch replay",
+        "url": ""
+      },
+      "sample": true
+    },
+    {
+      "title": "Festival of Faith",
+      "date": "2024-01-20",
+      "location": "Open Air Stadium",
+      "kind": "Live set",
+      "link": {
+        "label": "Watch replay",
+        "url": ""
+      },
+      "sample": true
+    },
+    {
+      "title": "Summer Praise Party",
+      "date": "2024-06-10",
+      "location": "Beachfront Stage",
+      "kind": "Live set",
+      "link": {
+        "label": "Get tickets",
+        "url": ""
+      },
+      "sample": true
+    }
+  ]
+}

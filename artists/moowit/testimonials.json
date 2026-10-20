@@ -1,0 +1,24 @@
+{
+  "_help": "Quotes from fans, clients or partners. Copy the _example into the testimonials list. Only use real quotes you have permission to share.",
+  "_example": {
+    "quote": "What they said.",
+    "author": "First name L."
+  },
+  "testimonials": [
+    {
+      "quote": "Moowit's music changed my perspective on worship. It's powerful, energetic, and deeply spiritual!",
+      "author": "Sarah M.",
+      "sample": true
+    },
+    {
+      "quote": "Finally, EDM that speaks to my faith! Every track is a blessing and a banger at the same time.",
+      "author": "David K.",
+      "sample": true
+    },
+    {
+      "quote": "The live sets are incredible! You can feel the Holy Spirit moving through the music.",
+      "author": "Grace L.",
+      "sample": true
+    }
+  ]
+}
