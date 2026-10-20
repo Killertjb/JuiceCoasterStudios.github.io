@@ -1,0 +1,41 @@
+{
+  "_help": "Main details for this service. The page and the home-page card both read this file. Leave unused values empty (\"\" or []); they are simply hidden. status: draft = not shown on the home page, live = shown. Image paths are relative to this folder.",
+  "type": "service",
+  "slug": "{{SLUG}}",
+  "name": "{{NAME}}",
+  "fullName": "",
+  "badge": "",
+  "tagline": "",
+  "summary": "",
+  "icon": "🛠️",
+  "established": "",
+  "bioTitle": "",
+  "bio": [],
+  "highlights": [],
+  "images": {
+    "hero": "",
+    "card": "",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "light",
+    "accent": "#2563eb"
+  },
+  "links": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": "",
+    "youtube": "",
+    "whatsapp": "",
+    "website": ""
+  },
+  "status": "draft",
+  "_examples": {
+    "highlights": [
+      {
+        "value": "500+",
+        "label": "Orders delivered"
+      }
+    ]
+  }
+}

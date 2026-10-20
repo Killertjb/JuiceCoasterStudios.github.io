@@ -1,0 +1,9 @@
+{
+  "_help": "Terms and policies people can open from the page. Put the files in this folder (PDF or HTML works best for visitors) and list them here. Copy the _example into the policies list.",
+  "_example": {
+    "title": "Booking terms",
+    "file": "policies/booking-terms.pdf",
+    "summary": "Deposits, cancellations and rescheduling."
+  },
+  "policies": []
+}

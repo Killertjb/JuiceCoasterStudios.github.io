@@ -1,0 +1,21 @@
+{
+  "_help": "Streaming and social platforms. The key (for example appleMusic) is what you use inside releases.json, profile.json and contact.json links. Order here is the order buttons appear in. To support a new platform just add a line; any key that is not listed still works and shows its key as the label.",
+  "platforms": {
+    "spotify":      { "label": "Spotify",       "icon": "🎵", "color": "#1db954", "kind": "music" },
+    "appleMusic":   { "label": "Apple Music",   "icon": "🍎", "color": "#fa243c", "kind": "music" },
+    "youtube":      { "label": "YouTube",       "icon": "▶️", "color": "#ff0000", "kind": "video" },
+    "youtubeMusic": { "label": "YouTube Music", "icon": "🎶", "color": "#ff0000", "kind": "music" },
+    "amazonMusic":  { "label": "Amazon Music",  "icon": "🎧", "color": "#25d1da", "kind": "music" },
+    "deezer":       { "label": "Deezer",        "icon": "🎼", "color": "#a238ff", "kind": "music" },
+    "tidal":        { "label": "TIDAL",         "icon": "🌊", "color": "#111111", "kind": "music" },
+    "soundcloud":   { "label": "SoundCloud",    "icon": "☁️", "color": "#ff5500", "kind": "music" },
+    "bandcamp":     { "label": "Bandcamp",      "icon": "💿", "color": "#1da0c3", "kind": "music" },
+    "audiomack":    { "label": "Audiomack",     "icon": "🔊", "color": "#ffa200", "kind": "music" },
+    "instagram":    { "label": "Instagram",     "icon": "📷", "color": "#e1306c", "kind": "social" },
+    "tiktok":       { "label": "TikTok",        "icon": "🎬", "color": "#111111", "kind": "social" },
+    "facebook":     { "label": "Facebook",      "icon": "👍", "color": "#1877f2", "kind": "social" },
+    "x":            { "label": "X",             "icon": "✖️", "color": "#111111", "kind": "social" },
+    "whatsapp":     { "label": "WhatsApp",      "icon": "💬", "color": "#25d366", "kind": "social" },
+    "website":      { "label": "Website",       "icon": "🌐", "color": "#475569", "kind": "other" }
+  }
+}

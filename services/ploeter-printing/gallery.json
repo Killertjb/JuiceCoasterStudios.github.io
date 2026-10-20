@@ -1,0 +1,26 @@
+{
+  "_help": "Photos of finished work for the Our Work section. Put the files in media/gallery/. Copy the _example into the images list. alt describes the picture for screen readers.",
+  "title": "Apparel & Custom Prints",
+  "_example": {
+    "image": "media/gallery/work-01.jpg",
+    "caption": "Short caption",
+    "alt": "What the photo shows"
+  },
+  "images": [
+    {
+      "image": "media/gallery/apparel-01.png",
+      "caption": "Detailed artwork prints",
+      "alt": "Black V-neck t-shirt with a detailed portrait print"
+    },
+    {
+      "image": "media/gallery/apparel-02.png",
+      "caption": "Graphic and sleeve-label prints",
+      "alt": "Black t-shirt with a crown of thorns graphic and a printed sleeve label"
+    },
+    {
+      "image": "media/gallery/apparel-03.png",
+      "caption": "Everyday wear with custom prints",
+      "alt": "Black t-shirt with a small chest print, worn against a brick wall"
+    }
+  ]
+}

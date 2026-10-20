@@ -1,0 +1,11 @@
+{
+  "_help": "Music videos, visualisers, behind the scenes. For YouTube just give the youtubeId (the part after v= in the link) and the thumbnail and link are automatic. Otherwise give url and thumbnail. Copy the _example into the videos list.",
+  "_example": {
+    "title": "Song Title (Official Video)",
+    "youtubeId": "dQw4w9WgXcQ",
+    "url": "",
+    "thumbnail": "",
+    "note": "Optional short description"
+  },
+  "videos": []
+}

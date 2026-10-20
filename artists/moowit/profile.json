@@ -1,0 +1,86 @@
+{
+  "_help": "Main details for this artist. The page and the home-page card both read this file. Leave unused values empty (\"\" or []); they are simply hidden. status: draft = not shown on the home page, live = shown. Image paths are relative to this folder.",
+  "type": "artist",
+  "slug": "moowit",
+  "name": "Moowit",
+  "fullName": "",
+  "badge": "Christian EDM Artist",
+  "tagline": "Spreading Light Through Sound",
+  "summary": "Experience the creative world of Moowit's music and artistry.",
+  "icon": "🎧",
+  "quote": {
+    "text": "Make a joyful noise unto the Lord",
+    "attribution": "Psalm 100:1"
+  },
+  "bioTitle": "The Mission",
+  "bio": [
+    "Moowit is on a mission to bring the message of hope, faith, and love to the dance floor. Combining powerful EDM beats with uplifting Christian themes, every track is designed to inspire and energize the soul.",
+    "From worship anthems to high-energy festival bangers, Moowit creates music that celebrates faith while making you move. It's not just about the drop—it's about lifting spirits and bringing people together in praise."
+  ],
+  "genres": [
+    "Progressive House",
+    "Future Bass",
+    "Big Room",
+    "Melodic Dubstep",
+    "Trance",
+    "Electro House"
+  ],
+  "highlights": [],
+  "pillars": [
+    {
+      "icon": "🙏",
+      "title": "Faith-Driven",
+      "text": "Every beat carries a message"
+    },
+    {
+      "icon": "⚡",
+      "title": "High Energy",
+      "text": "Music that moves body & soul"
+    },
+    {
+      "icon": "💫",
+      "title": "Uplifting",
+      "text": "Spreading positivity & hope"
+    }
+  ],
+  "images": {
+    "hero": "",
+    "card": "",
+    "portrait": "",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "dark",
+    "accent": "#8b5cf6"
+  },
+  "links": {
+    "spotify": "",
+    "appleMusic": "",
+    "youtube": "",
+    "youtubeMusic": "",
+    "amazonMusic": "",
+    "soundcloud": "",
+    "bandcamp": "",
+    "instagram": "",
+    "tiktok": "",
+    "facebook": "",
+    "x": "",
+    "website": ""
+  },
+  "status": "live",
+  "_examples": {
+    "highlights": [
+      {
+        "value": "10K+",
+        "label": "Monthly listeners"
+      }
+    ],
+    "pillars": [
+      {
+        "icon": "🙏",
+        "title": "Faith-driven",
+        "text": "Every beat carries a message."
+      }
+    ]
+  }
+}

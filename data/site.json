@@ -1,0 +1,20 @@
+{
+  "_help": "Studio-wide details. Used by the home page, the studio contact page and any listing that sets useSiteContact to true. Empty values are hidden on the site.",
+  "name": "Juice Coster Studio",
+  "tagline": "Where Creativity Meets Excellence",
+  "description": "Music Production | Artist Management | Print Services",
+  "contact": {
+    "email": "your@email.com",
+    "phone": "",
+    "whatsapp": "27123456789",
+    "whatsappDisplay": "+27 12 345 6789",
+    "location": "",
+    "hours": ""
+  },
+  "links": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": "",
+    "youtube": ""
+  }
+}

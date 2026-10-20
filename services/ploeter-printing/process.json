@@ -1,0 +1,26 @@
+{
+  "_help": "Numbered steps from first contact to delivery. Copy the _example into the steps list.",
+  "title": "Our Process",
+  "_example": {
+    "title": "Consultation",
+    "text": "We discuss what you need."
+  },
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We discuss your vision and requirements"
+    },
+    {
+      "title": "Design",
+      "text": "Our team creates or refines your design"
+    },
+    {
+      "title": "Production",
+      "text": "High-quality printing with attention to detail"
+    },
+    {
+      "title": "Delivery",
+      "text": "Fast and reliable delivery to your door"
+    }
+  ]
+}

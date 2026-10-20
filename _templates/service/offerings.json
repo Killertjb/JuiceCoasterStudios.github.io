@@ -1,0 +1,15 @@
+{
+  "_help": "What this service provides. icon is an emoji; image (optional) replaces the icon. price and link are optional. Copy the _example into the offerings list.",
+  "_example": {
+    "icon": "📇",
+    "title": "Business Cards",
+    "description": "Short description.",
+    "price": "From R250",
+    "image": "",
+    "link": {
+      "label": "Request a quote",
+      "url": ""
+    }
+  },
+  "offerings": []
+}

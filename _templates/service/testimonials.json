@@ -1,0 +1,8 @@
+{
+  "_help": "Quotes from fans, clients or partners. Copy the _example into the testimonials list. Only use real quotes you have permission to share.",
+  "_example": {
+    "quote": "What they said.",
+    "author": "First name L."
+  },
+  "testimonials": []
+}

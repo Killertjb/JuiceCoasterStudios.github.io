@@ -1,0 +1,76 @@
+{
+  "_help": "Main details for this artist. The page and the home-page card both read this file. Leave unused values empty (\"\" or []); they are simply hidden. status: draft = not shown on the home page, live = shown. Image paths are relative to this folder.",
+  "type": "artist",
+  "slug": "nhs",
+  "name": "NHS",
+  "fullName": "New Horizon Sky",
+  "badge": "",
+  "tagline": "Music Beyond Boundaries",
+  "summary": "Discover the unique sound and style of our featured artist NHS.",
+  "icon": "🎤",
+  "quote": {
+    "text": "",
+    "attribution": ""
+  },
+  "bioTitle": "About NHS",
+  "bio": [
+    "New Horizon Sky (NHS) is an innovative artist pushing the boundaries of modern music. Blending genres and creating unique soundscapes, NHS brings a fresh perspective to the industry.",
+    "With a passion for storytelling through sound, NHS crafts tracks that resonate with listeners on a deeper level. Each release is a journey into uncharted musical territory."
+  ],
+  "genres": [],
+  "highlights": [
+    {
+      "value": "10K+",
+      "label": "Monthly Listeners"
+    },
+    {
+      "value": "25+",
+      "label": "Tracks Released"
+    },
+    {
+      "value": "5+",
+      "label": "Years Active"
+    }
+  ],
+  "pillars": [],
+  "images": {
+    "hero": "media/photos/hero-background.png",
+    "card": "",
+    "portrait": "",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "dark",
+    "accent": "#8b5cf6"
+  },
+  "links": {
+    "spotify": "",
+    "appleMusic": "",
+    "youtube": "",
+    "youtubeMusic": "",
+    "amazonMusic": "",
+    "soundcloud": "",
+    "bandcamp": "",
+    "instagram": "",
+    "tiktok": "",
+    "facebook": "",
+    "x": "",
+    "website": ""
+  },
+  "status": "live",
+  "_examples": {
+    "highlights": [
+      {
+        "value": "10K+",
+        "label": "Monthly listeners"
+      }
+    ],
+    "pillars": [
+      {
+        "icon": "🙏",
+        "title": "Faith-driven",
+        "text": "Every beat carries a message."
+      }
+    ]
+  }
+}

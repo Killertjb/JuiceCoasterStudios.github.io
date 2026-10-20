@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Juice Coster Studio</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <meta name="description" content="Get in touch with Juice Coster Studio for music production, artist management and print services.">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+</head>
+<body data-root="../" data-page="contact">
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="../" data-site="name">Juice Coster Studio</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../#listings">Artists &amp; Services</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">How To Reach Us</h1>
+            <p class="section-subtitle">Have a question? Reach out using any of the options below.</p>
+
+            <div class="contact-grid" id="contact-cards"></div>
+
+            <form class="contact-form" id="contact-form">
+                <div>
+                    <label for="f-name">Your name</label>
+                    <input id="f-name" type="text" required autocomplete="name">
+                </div>
+                <div>
+                    <label for="f-email">Your email</label>
+                    <input id="f-email" type="email" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="f-message">Message</label>
+                    <textarea id="f-message" rows="5" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <p class="form-note">This opens your email app with the message ready to send.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> <span data-site="name">Juice Coster Studio</span>. All rights reserved.</p>
+            <div class="social-links"><a href="../">Back to home</a></div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/lib.js"></script>
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>

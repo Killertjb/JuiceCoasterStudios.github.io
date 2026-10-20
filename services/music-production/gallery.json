@@ -1,0 +1,10 @@
+{
+  "_help": "Photos of finished work for the Our Work section. Put the files in media/gallery/. Copy the _example into the images list. alt describes the picture for screen readers.",
+  "title": "Our Work",
+  "_example": {
+    "image": "media/gallery/work-01.jpg",
+    "caption": "Short caption",
+    "alt": "What the photo shows"
+  },
+  "images": []
+}

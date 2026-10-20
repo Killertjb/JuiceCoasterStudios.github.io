@@ -1,0 +1,46 @@
+{
+  "_help": "What this service provides. icon is an emoji; image (optional) replaces the icon. price and link are optional. Copy the _example into the offerings list.",
+  "_example": {
+    "icon": "📇",
+    "title": "Business Cards",
+    "description": "Short description.",
+    "price": "From R250",
+    "image": "",
+    "link": {
+      "label": "Request a quote",
+      "url": ""
+    }
+  },
+  "offerings": [
+    {
+      "icon": "📇",
+      "title": "Business Cards",
+      "description": "Premium business cards that make lasting impressions"
+    },
+    {
+      "icon": "📄",
+      "title": "Flyers & Brochures",
+      "description": "Eye-catching promotional materials for your business"
+    },
+    {
+      "icon": "🖼️",
+      "title": "Posters & Banners",
+      "description": "Large format printing for maximum impact"
+    },
+    {
+      "icon": "📦",
+      "title": "Packaging Design",
+      "description": "Custom packaging solutions that stand out"
+    },
+    {
+      "icon": "👕",
+      "title": "Apparel Printing",
+      "description": "Custom t-shirts, hoodies, and merchandise"
+    },
+    {
+      "icon": "🎨",
+      "title": "Custom Projects",
+      "description": "Unique printing solutions tailored to your needs"
+    }
+  ]
+}

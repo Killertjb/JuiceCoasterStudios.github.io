@@ -1,0 +1,9 @@
+{
+  "_help": "Numbered steps from first contact to delivery. Copy the _example into the steps list.",
+  "title": "How It Works",
+  "_example": {
+    "title": "Consultation",
+    "text": "We discuss what you need."
+  },
+  "steps": []
+}

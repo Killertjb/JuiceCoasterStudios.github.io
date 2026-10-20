@@ -1,0 +1,36 @@
+{
+  "_help": "Music videos, visualisers, behind the scenes. For YouTube just give the youtubeId (the part after v= in the link) and the thumbnail and link are automatic. Otherwise give url and thumbnail. Copy the _example into the videos list.",
+  "_example": {
+    "title": "Song Title (Official Video)",
+    "youtubeId": "dQw4w9WgXcQ",
+    "url": "",
+    "thumbnail": "",
+    "note": "Optional short description"
+  },
+  "videos": [
+    {
+      "title": "Midnight Dreams - Official Video",
+      "youtubeId": "",
+      "url": "",
+      "thumbnail": "",
+      "note": "2.5M views • 3 months ago",
+      "sample": true
+    },
+    {
+      "title": "Echoes - Visualizer",
+      "youtubeId": "",
+      "url": "",
+      "thumbnail": "",
+      "note": "1.8M views • 5 months ago",
+      "sample": true
+    },
+    {
+      "title": "Behind The Scenes - Studio Session",
+      "youtubeId": "",
+      "url": "",
+      "thumbnail": "",
+      "note": "950K views • 6 months ago",
+      "sample": true
+    }
+  ]
+}

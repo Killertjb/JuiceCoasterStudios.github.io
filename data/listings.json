@@ -1,0 +1,9 @@
+{
+  "_help": "Which artists and services appear on the home page, in this order. type is artist or service; slug is the folder name inside artists/ or services/. Name, summary and icon come from that folder's profile.json. A profile with status \"draft\" is skipped until you set it to \"live\".",
+  "listings": [
+    { "type": "service", "slug": "music-production" },
+    { "type": "artist",  "slug": "nhs" },
+    { "type": "artist",  "slug": "moowit" },
+    { "type": "service", "slug": "ploeter-printing" }
+  ]
+}
