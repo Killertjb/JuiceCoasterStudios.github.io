@@ -2,7 +2,7 @@
 
 **Type:** artist  |  **Folder:** `{{FOLDER}}/`  |  **Status:** see `"status"` in `profile.json` (`draft` = hidden from the home page, `live` = visible)
 
-> Write one or two lines here: who {{NAME}} is and how they work with Juice Coster Studio.
+> Write one or two lines here: who {{NAME}} is and how they work with {{STUDIO}}.
 
 ## What is in this folder
 

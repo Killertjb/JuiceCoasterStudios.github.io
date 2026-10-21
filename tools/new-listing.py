@@ -75,7 +75,11 @@ def main() -> None:
     if folder.exists() and not args.merge:
         sys.exit(f"{folder.relative_to(ROOT)} already exists (use --merge to add missing template files only).")
 
-    tokens = {"NAME": args.name, "SLUG": slug, "TYPE": args.kind,
+    try:   # the studio name comes from data/site.json so a rename only happens in one place
+        studio = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8")).get("name") or "the studio"
+    except (OSError, ValueError):
+        studio = "the studio"
+    tokens = {"STUDIO": studio, "NAME": args.name, "SLUG": slug, "TYPE": args.kind,
               "FOLDER": f"{FOLDERS[args.kind]}/{slug}", "YEAR": str(date.today().year)}
 
     created = []

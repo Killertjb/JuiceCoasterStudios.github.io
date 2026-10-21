@@ -9,7 +9,7 @@ Every JSON file also carries a `_help` note and (where useful) an `_example` blo
 ### `site.json`
 | Field | Meaning |
 |-------|---------|
-| `name`, `tagline`, `description` | Home page hero text |
+| `name`, `shortName`, `tagline`, `description` | `name` is the full studio name (home page title, page titles, footers). `shortName` is the abbreviation for tight spots (logo, "back" buttons). `tagline` and `description` are the other hero lines |
 | `contact.email`, `phone`, `whatsapp`, `whatsappDisplay`, `location`, `hours` | Studio contact page and footer. `whatsapp` is digits only with country code |
 | `links` | Studio social links, keyed by platform (`instagram`, `facebook`, `tiktok`, `youtube`, ...) |
 
