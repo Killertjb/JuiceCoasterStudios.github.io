@@ -27,12 +27,12 @@
   },
   "releases": [
     {
-      "id": "release-01",
-      "title": "",
+      "id": "u-wil-my-wil",
+      "title": "U Wil My Wil",
       "type": "single",
-      "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-01.jpg",
+      "releaseDate": "2026-09-02",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/u-wil-my-wil.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
