@@ -32,6 +32,7 @@ Every artist folder has the same files, and so does every service folder. Only t
 ├─ assets/                     Shared engine: you rarely touch this
 │   ├─ css/  base.css  home.css  listing.css
 │   └─ js/   lib.js  home.js  listing.js  contact.js
+│       (theme.js = light/dark toggle for the home and contact pages)
 │
 ├─ tools/
 │   ├─ new-listing.py            Create a new artist/service from the template
@@ -110,3 +111,10 @@ Before committing, run `python3 tools/check-site.py`. It reports JSON typos, mis
 ## Link previews and search
 
 Google runs the page's JavaScript, so listings are indexed. WhatsApp, Facebook and X do **not** run scripts, so a shared link only shows the `<meta>` description and `og:` tags at the top of that listing's `index.html`. Fill those in (including an `og:image` with the full web address of a share image) for good link previews.
+
+## Light / dark theme (home page and studio contact page)
+
+- The toggle (sun / moon button) sits in the navbar. A visitor's choice is saved in their browser; on a first visit the page follows their device setting.
+- Every colour for both themes is defined at the top of `assets/css/home.css` (the `:root` block is light, `html[data-theme="dark"]` is dark). To change a colour, edit it there.
+- `assets/js/theme.js` runs the button; a tiny script in each page's `<head>` applies the saved theme before the page paints so there is no flash.
+- Artist and service pages keep their own look for now.

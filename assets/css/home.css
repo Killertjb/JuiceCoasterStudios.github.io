@@ -1,7 +1,67 @@
-/* Home page + studio contact page (page type: data-page="home" / "contact"). */
+/* Home page + studio contact page (page type: data-page="home" / "contact").
+
+   LIGHT / DARK THEME
+   The colours below are the only place the two themes differ. The page sets <html data-theme="light|dark">
+   (before it paints, from the visitor's saved choice or their device setting) and assets/js/theme.js
+   handles the toggle button. To change a colour, edit it in the matching block. */
+
+:root {
+    color-scheme: light;
+    --accent-text: var(--accent);        /* accent used for text and outlines (lighter in dark mode for contrast) */
+    --nav-bg: #ffffff;
+    --card-border: transparent;
+    --input-bg: #ffffff;
+    --input-border: #d1d5db;
+    --footer-bg: #1f2937;
+    --footer-text: #ffffff;
+    --meta-theme: #ffffff;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0b1120;
+    --bg-alt: #0f172a;
+    --card: #172033;
+    --text: #e6eaf2;
+    --muted: #9aa7bd;
+    --border: #2a3650;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.6);
+    --accent-text: #8ab4ff;
+    --nav-bg: rgba(11, 17, 32, 0.92);
+    --card-border: var(--border);
+    --input-bg: #0f172a;
+    --input-border: #34425f;
+    --footer-bg: #070b15;
+    --footer-text: #e6eaf2;
+    --meta-theme: #0b1120;
+}
+
+/* Smooth switch: theme.js adds .theme-transition for a moment while the theme changes, so every colour
+   fades instead of snapping. Skipped for visitors who ask for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+    html.theme-transition,
+    html.theme-transition *,
+    html.theme-transition *::before,
+    html.theme-transition *::after {
+        transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease,
+                    box-shadow 0.4s ease, fill 0.4s ease, stroke 0.4s ease, opacity 0.4s ease !important;
+    }
+
+    html.theme-transition .theme-toggle svg {
+        transition: transform 0.4s ease, opacity 0.4s ease !important;
+    }
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline-color: var(--accent-text);
+}
 
 .navbar {
-    background: #fff;
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
@@ -21,8 +81,15 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--accent-text);
     text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .nav-links {
@@ -36,14 +103,58 @@
 .nav-links a {
     text-decoration: none;
     font-weight: 500;
+    color: var(--text);
 }
 
 .nav-links a:hover {
-    color: var(--accent);
+    color: var(--accent-text);
 }
+
+/* Light / dark toggle: shows the moon in light mode and the sun in dark mode */
+.theme-toggle {
+    position: relative;
+    flex: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-text);
+    color: var(--accent-text);
+}
+
+.theme-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.theme-toggle .icon-sun { opacity: 0; transform: rotate(-90deg) scale(0.5); }
+.theme-toggle .icon-moon { opacity: 1; transform: rotate(0) scale(1); }
+
+html[data-theme="dark"] .theme-toggle .icon-sun { opacity: 1; transform: rotate(0) scale(1); }
+html[data-theme="dark"] .theme-toggle .icon-moon { opacity: 0; transform: rotate(90deg) scale(0.5); }
 
 /* Hero */
 .hero {
+    position: relative;
+    isolation: isolate;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
     padding: 110px 20px;
@@ -52,6 +163,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Dark layer that fades in over the hero in dark mode (gradients cannot animate, opacity can).
+   With a banner picture (class has-image, set by home.js) it is a gentle dimming instead. */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    background: linear-gradient(135deg, #1b1a4b 0%, #3b1d6e 100%);
+    transition: opacity 0.4s ease;
+}
+
+.hero.has-image::before {
+    background: rgba(6, 10, 24, 0.35);
+}
+
+html[data-theme="dark"] .hero::before {
+    opacity: 1;
 }
 
 .hero-content {
@@ -110,6 +242,7 @@
     flex-direction: column;
     align-items: center;
     background: var(--card);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 2.25rem 1.75rem;
@@ -180,6 +313,7 @@
 
 .contact-card {
     background: var(--card);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 1.75rem;
@@ -191,7 +325,7 @@
 }
 
 .contact-card a {
-    color: var(--accent);
+    color: var(--accent-text);
     font-weight: 600;
     text-decoration: none;
 }
@@ -217,9 +351,16 @@
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--input-border);
     border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text);
     font: inherit;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--muted);
 }
 
 .form-note {
@@ -230,8 +371,9 @@
 
 /* Footer */
 .footer {
-    background: #1f2937;
-    color: #fff;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    border-top: 1px solid var(--card-border);
     padding: 2rem 0;
 }
 
@@ -254,7 +396,7 @@
 }
 
 .social-links a {
-    color: #fff;
+    color: var(--footer-text);
     text-decoration: none;
     font-size: 0.95rem;
     opacity: 0.85;
@@ -266,6 +408,30 @@
 }
 
 @media (max-width: 600px) {
-    .nav-links { gap: 1rem; }
+    /* Phones: logo and theme toggle share the first row, the links sit underneath */
+    .navbar { padding: 0.6rem 0; }
+    .nav-right { display: contents; }
+    .navbar .logo { order: 1; }
+    .theme-toggle { order: 2; }
+    .nav-links { order: 3; width: 100%; justify-content: space-between; gap: 0.5rem; }
     .footer .container { flex-direction: column; text-align: center; }
+}
+
+/* Filter pills: outline in the readable accent, fill with the button accent when selected */
+.filters .filter-btn {
+    border-color: var(--accent-text);
+    color: var(--accent-text);
+}
+
+.filters .filter-btn:hover,
+.filters .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+html[data-theme="dark"] .notice {
+    background: #3b2f0b;
+    border-color: #7c5e10;
+    color: #fcd34d;
 }
