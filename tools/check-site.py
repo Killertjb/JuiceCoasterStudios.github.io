@@ -50,6 +50,8 @@ def load_json(path):
 def media_refs(value, key=""):
     """Yield every string that points at a file inside the listing folder."""
     if isinstance(value, dict):
+        if "title" in value and not str(value["title"]).strip():
+            return                         # an empty slot (no title yet): the page ignores it, so do we
         for k, v in value.items():
             if k.startswith("_"):          # _help / _example blocks are documentation
                 continue
@@ -119,7 +121,11 @@ def check_listing(kind: str, slug: str):
             if not (folder / ref).exists():
                 err(f"{label}/{name}: '{ref}' does not exist")
 
-    releases = (data.get("releases.json") or {}).get("releases", [])
+    all_releases = (data.get("releases.json") or {}).get("releases", [])
+    releases = [r for r in all_releases if str(r.get("title", "")).strip()]   # empty slots are not releases yet
+    empty_slots = len(all_releases) - len(releases)
+    if empty_slots and not releases:
+        warn(f"{label}: {empty_slots} empty release slot(s) in releases.json, none filled in yet")
     no_links = [r.get("title", "?") for r in releases if not any(str(v).strip() for v in (r.get("links") or {}).values())]
     no_cover = [r.get("title", "?") for r in releases if not str(r.get("cover", "")).strip()]
     no_date = [r.get("title", "?") for r in releases if not r.get("releaseDate")]
