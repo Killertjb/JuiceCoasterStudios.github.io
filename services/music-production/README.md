@@ -2,7 +2,7 @@
 
 **Type:** service  |  **Folder:** `services/music-production/`  |  **Status:** see `"status"` in `profile.json` (`draft` = hidden from the home page, `live` = visible)
 
-> Juice Coster Studio's own music production service.
+> Just For Entertainment Society's own music production service.
 
 ## What is in this folder
 
