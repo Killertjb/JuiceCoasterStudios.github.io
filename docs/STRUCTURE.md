@@ -14,7 +14,7 @@ Every artist folder has the same files, and so does every service folder. Only t
 ├─ README.md                   Short overview
 │
 ├─ data/                       Site-wide settings (edit these most)
-│   ├─ site.json                 Studio name, tagline, contact details, social links
+│   ├─ site.json                 Studio name, tagline, home page banner, contact details, social links
 │   ├─ listings.json             Which artists/services appear on the home page, in order
 │   └─ platforms.json            Spotify, Apple Music, YouTube, ...: label, icon, colour
 │
@@ -26,6 +26,8 @@ Every artist folder has the same files, and so does every service folder. Only t
 ├─ _templates/                 Copy these to start something new (not published by GitHub Pages)
 │   ├─ artist/
 │   └─ service/
+│
+├─ media/home/                 Home page pictures, including the banner (see its README.md)
 │
 ├─ assets/                     Shared engine: you rarely touch this
 │   ├─ css/  base.css  home.css  listing.css
