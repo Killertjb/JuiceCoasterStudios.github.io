@@ -46,3 +46,11 @@ A section only appears when its file has content, so a new artist page grows as 
 
 ## Notes about Zion Creed
 Anything specific to this artist: agreements, release schedule, preferred platforms, brand notes.
+- **Filler to replace** (written from the song titles and covers, not from his own channel):
+  - `highlights`: **8000+ monthly listeners** and **20+ songs released** are placeholders. Put in the real figures.
+  - `quote`: Psalm 46:10 is a suggestion; change it to his own verse or motto, or clear it.
+  - `bio`, `tagline`, `summary` and the `pillars`: first draft. Add his real story (when he started, what inspires the songs).
+  - `links` in `profile.json` are empty: add his YouTube, Spotify, Apple Music and social links and they show as buttons in the hero.
+  - `videos.json` is empty: add his YouTube videos (the `youtubeId` is the part after `v=` in the video link).
+- `realName` in `profile.json` is for reference only and is not shown on the page. The page headline is the artist name.
+- `media/photos/card.jpg` is a crop of the "U wil, my wil" cover for the home-page card. The hero background is the same cover. Replace either with a proper photo or banner when ready (`images.card`, `images.hero`).
