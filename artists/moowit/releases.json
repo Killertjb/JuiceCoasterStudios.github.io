@@ -1,17 +1,17 @@
 {
   "_help": "Every release. The page sorts them by releaseDate, newest first, and adds filter buttons (Albums / EPs / Singles) when there is more than one type. Copy the _example block into the releases list for each release. links: fill only the platforms that exist, empty ones are hidden; the key names come from data/platforms.json. Clicking the cover opens the platform named in primary (or the first link). cover is optional; a coloured placeholder is shown until you add one. tracks is optional (useful for albums).",
   "_example": {
-    "id": "song-title",
-    "title": "Song Title",
+    "id": "energy",
+    "title": "Energy",
     "type": "single",
     "releaseDate": "2026-01-31",
-    "genre": "",
-    "cover": "media/covers/song-title.jpg",
-    "primary": "spotify",
+    "genre": "Christian EDM",
+    "cover": "media/covers/energy.png",
+    "primary": "youtube-music",
     "links": {
       "spotify": "https://open.spotify.com/track/...",
       "appleMusic": "https://music.apple.com/...",
-      "youtube": "https://www.youtube.com/watch?v=...",
+      "youtube": "https://youtu.be/XhURnXghKus?si=aAYRx4hAERsH7aQi",
       "youtubeMusic": "",
       "soundcloud": "",
       "bandcamp": ""
