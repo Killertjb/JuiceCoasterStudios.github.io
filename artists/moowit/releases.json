@@ -27,17 +27,17 @@
   },
   "releases": [
     {
-      "id": "risen",
-      "title": "Risen",
+      "id": "energy",
+      "title": "Energy",
       "type": "single",
-      "releaseDate": "",
-      "genre": "Progressive House",
-      "cover": "",
-      "primary": "spotify",
+      "releaseDate": "2026-01-31",
+      "genre": "Christian EDM",
+      "cover": "media/covers/energy.png",
+      "primary": "youtube-music",
       "links": {
-        "spotify": "",
-        "appleMusic": "",
-        "youtube": ""
+      "spotify": "https://open.spotify.com/track/...",
+      "appleMusic": "https://music.apple.com/...",
+      "youtube": "https://youtu.be/XhURnXghKus?si=aAYRx4hAERsH7aQi",
       },
       "sample": true,
       "icon": "✝"
