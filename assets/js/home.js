@@ -27,6 +27,7 @@
         const url = root + heroPath.replace(/^\/+/, '');
         const probe = new Image();
         probe.onload = () => {
+            hero.classList.add('has-image');   // lets the dark theme dim the picture instead of covering it
             const shade = 'rgba(10, 14, 30, ' + overlay + ')';
             hero.style.backgroundImage = 'linear-gradient(' + shade + ', ' + shade + '), url("' + encodeURI(url) + '")';
             hero.style.backgroundSize = 'cover';
