@@ -30,7 +30,8 @@
             : [opt('offerings.json'), opt('gallery.json'), opt('process.json')])
     ]);
     const site = siteData || {};
-    const siteName = text(site.name) || 'Juice Coster Studio';
+    const siteName = text(site.name) || 'Just For Entertainment Society';
+    const shortName = text(site.shortName) || siteName;   // back button
     const name = text(profile.name) || 'Untitled';
 
     /* ---- Page-level settings ---------------------------------------------- */
@@ -278,7 +279,7 @@
     const toggle = el('button', { class: 'nav-toggle', type: 'button', 'aria-label': 'Toggle menu', 'aria-expanded': 'false', text: '☰' });
     const menu = el('ul', { class: 'nav-menu' }, built.map(([label, node]) => el('li', {}, el('a', { href: '#' + node.id, text: label }))));
     const nav = el('nav', { class: 'nav' }, el('div', { class: 'nav-inner' },
-        el('a', { class: 'nav-back', href: root, text: '← ' + siteName }), toggle, menu));
+        el('a', { class: 'nav-back', href: root, text: '← ' + shortName }), toggle, menu));
     toggle.addEventListener('click', () => toggle.setAttribute('aria-expanded', String(nav.classList.toggle('open'))));
     menu.addEventListener('click', event => { if (event.target.closest('a')) { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); } });
 

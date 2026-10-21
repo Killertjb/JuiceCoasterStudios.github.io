@@ -1,4 +1,4 @@
-# Juice Coster Studio website
+# Just For Entertainment Society website
 
 A static website (no build step) hosted on GitHub Pages. It promotes the studio and the artists and services it works with. The home page lists every listing; each one opens its own page. Artist pages show every release with cover art, and clicking goes straight to the streaming platform you chose.
 

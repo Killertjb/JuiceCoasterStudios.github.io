@@ -1,6 +1,7 @@
 {
-  "_help": "Studio-wide details. Used by the home page, the studio contact page and any listing that sets useSiteContact to true. Empty values are hidden on the site. The studio name, tagline and description shown at the top of the home page come from here, not from index.html. heroImage is the home page banner: put the file in media/home/ and write its path, for example media/home/banner.jpg (empty = purple gradient). heroOverlay (0 to 0.9) darkens the picture so the text stays readable; heroPosition says which part stays visible when it is cropped. See media/home/README.md.",
-  "name": "Juice Coster Studio",
+  "_help": "Studio-wide details. Used by the home page, the studio contact page and any listing that sets useSiteContact to true. Empty values are hidden on the site. The studio name, tagline and description shown at the top of the home page come from here, not from index.html. heroImage is the home page banner: put the file in media/home/ and write its path, for example media/home/banner.jpg (empty = purple gradient). heroOverlay (0 to 0.9) darkens the picture so the text stays readable; heroPosition says which part stays visible when it is cropped. See media/home/README.md. name is the full name (hero title, footer, page titles). shortName is used where space is tight: the logo in the menu and the back button on every artist and service page.",
+  "name": "Just For Entertainment Society",
+  "shortName": "J4ES",
   "tagline": "Where Creativity Meets Excellence",
   "description": "Music Production | Artist Management | Print Services",
   "heroImage": "",
