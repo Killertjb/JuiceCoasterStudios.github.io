@@ -1,0 +1,481 @@
+{
+  "_help": "Every release. The page sorts them by releaseDate, newest first, and adds filter buttons (Albums / EPs / Singles) when there is more than one type. Copy the _example block into the releases list for each release. links: fill only the platforms that exist, empty ones are hidden; the key names come from data/platforms.json. Clicking the cover opens the platform named in primary (or the first link). cover is optional; a coloured placeholder is shown until you add one. tracks is optional (useful for albums).",
+  "_example": {
+    "id": "song-title",
+    "title": "Song Title",
+    "type": "single",
+    "releaseDate": "2026-01-31",
+    "genre": "",
+    "cover": "media/covers/song-title.jpg",
+    "primary": "spotify",
+    "links": {
+      "spotify": "https://open.spotify.com/track/...",
+      "appleMusic": "https://music.apple.com/...",
+      "youtube": "https://www.youtube.com/watch?v=...",
+      "youtubeMusic": "",
+      "soundcloud": "",
+      "bandcamp": ""
+    },
+    "tracks": [
+      {
+        "title": "Track name",
+        "links": {
+          "spotify": ""
+        }
+      }
+    ]
+  },
+  "releases": [
+    {
+      "id": "release-01",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-01.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-02",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-02.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-03",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-03.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-04",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-04.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-05",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-05.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-06",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-06.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-07",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-07.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-08",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-08.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-09",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-09.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-10",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-10.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-11",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-11.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-12",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-12.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-13",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-13.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-14",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-14.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-15",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-15.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-16",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-16.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-17",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-17.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-18",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-18.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-19",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-19.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-20",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-20.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-21",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-21.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-22",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-22.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-23",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-23.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-24",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-24.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "release-25",
+      "title": "",
+      "type": "single",
+      "releaseDate": "",
+      "genre": "",
+      "cover": "media/covers/release-25.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    }
+  ],
+  "_slots": "25 empty slots, release-01 to release-25. To fill one: (1) type the title, (2) set type to single, ep or album, (3) add releaseDate as YYYY-MM-DD, (4) paste the platform links that exist and leave the rest empty, (5) save the cover art as the file named in cover (change .jpg to .png in the cover path if needed). A slot with an empty title is not shown on the page, so unused slots can stay. Slot order does not matter, the page sorts by releaseDate (newest first). Need more slots? Copy any slot block. Need another platform? Add its key from data/platforms.json to links."
+}
