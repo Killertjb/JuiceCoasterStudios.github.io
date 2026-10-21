@@ -47,7 +47,7 @@
     "spotify": "",
     "appleMusic": "",
     "youtube": "",
-    "youtubeMusic": "",
+    "youtubeMusic": "https://music.youtube.com/@NewHorizonSky",
     "amazonMusic": "",
     "soundcloud": "",
     "bandcamp": "",
@@ -61,7 +61,7 @@
   "_examples": {
     "highlights": [
       {
-        "value": "10K+",
+        "value": "15K+",
         "label": "Monthly listeners"
       }
     ],
