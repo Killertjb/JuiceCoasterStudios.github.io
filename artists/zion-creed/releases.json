@@ -45,13 +45,13 @@
       }
     },
     {
-      "id": "release-02",
-      "title": "",
+      "id": "ek-wil-na-u-luister",
+      "title": "Ek Wil Na U Luister",
       "type": "single",
-      "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-02.jpg",
-      "primary": "spotify",
+      "releaseDate": "2026-09-03",
+      "genre": "Gospel Folk",
+      "cover": "ek-wil-na-u-luister.jpg",
+      "primary": "Youtube-Music",
       "links": {
         "spotify": "",
         "appleMusic": "",
