@@ -26,6 +26,7 @@ Every JSON file also carries a `_help` note and (where useful) an `_example` blo
 |-------|---------|
 | `type`, `slug`, `name` | Identity. `name` is the title on the page and the home card |
 | `fullName` | Hero title if different from `name` (e.g. "New Horizon Sky") |
+| `realName` | Optional. For your own reference only, never shown on the page |
 | `badge` | Small label above the title (e.g. "Christian EDM Artist") |
 | `tagline` | Line under the title |
 | `summary` | One or two sentences for the **home-page card** and Google |

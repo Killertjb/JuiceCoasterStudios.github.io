@@ -3,29 +3,75 @@
   "type": "artist",
   "slug": "zion-creed",
   "name": "Zion Creed",
-  "fullName": "Arno Potgieter",
-  "badge": "",
-  "tagline": "",
-  "summary": "",
+  "fullName": "",
+  "realName": "Arno Potgieter",
+  "badge": "Gospel Folk · Afrikaans & English",
+  "tagline": "Songs of surrender, grace and hope.",
+  "summary": "Gospel folk worship in Afrikaans and English: songs of surrender, grace and hope.",
   "icon": "🎤",
   "quote": {
-    "text": "",
-    "attribution": ""
+    "text": "Be still, and know that I am God.",
+    "attribution": "Psalm 46:10"
   },
   "bioTitle": "",
-  "bio": [],
-  "genres": [],
-  "highlights": [],
-  "pillars": [],
+  "bio": [
+    "Zion Creed writes gospel folk worship for the quiet moments and the big ones: songs of surrender, grace and hope, sung in both Afrikaans and English.",
+    "From the prayer of “U wil, my wil” and “Ek wil na U luister” to the praise of “Lion of Judah” and “Jesus You Are Holy”, every song points back to the same place: a God who listens, forgives and leads.",
+    "The catalogue keeps growing, and every release has its own artwork. Tap a cover below to listen on your favourite platform."
+  ],
+  "genres": [
+    "Gospel Folk",
+    "Worship",
+    "Afrikaans Gospel",
+    "Christian"
+  ],
+  "highlights": [
+    {
+      "value": "8000+",
+      "label": "Monthly listeners",
+      "sample": true
+    },
+    {
+      "value": "20+",
+      "label": "Songs released",
+      "sample": true
+    },
+    {
+      "value": "2",
+      "label": "Languages: Afrikaans & English"
+    }
+  ],
+  "pillars": [
+    {
+      "icon": "🙏",
+      "title": "Surrender",
+      "text": "Songs of prayer and trust, giving the day back to God."
+    },
+    {
+      "icon": "🌅",
+      "title": "Grace",
+      "text": "Hope for every road, from “Keep Praying” to “Stronger Than the Battle”."
+    },
+    {
+      "icon": "🦁",
+      "title": "Praise",
+      "text": "Songs that lift Jesus up, from “Lion of Judah” to “Jesus You Are Holy”."
+    },
+    {
+      "icon": "🌍",
+      "title": "Two languages",
+      "text": "Written in Afrikaans and English, so more people can sing along."
+    }
+  ],
   "images": {
-    "hero": "",
-    "card": "",
+    "hero": "media/covers/u-wil-my-wil.jpg",
+    "card": "media/photos/card.jpg",
     "portrait": "",
     "logo": ""
   },
   "theme": {
     "mode": "dark",
-    "accent": "#8b5cf6"
+    "accent": "#d97706"
   },
   "links": {
     "spotify": "",
