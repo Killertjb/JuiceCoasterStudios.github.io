@@ -5,7 +5,7 @@
   "tagline": "Where Creativity Meets Excellence",
   "description": "Music Production | Artist Management | Print Services",
   "heroImage": "media/home/j4es-hero-background.jpg",
-  "heroOverlay": 0.45,
+  "heroOverlay": 0.15,
   "heroPosition": "center",
   "contact": {
     "email": "your@email.com",
