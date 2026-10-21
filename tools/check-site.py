@@ -157,6 +157,13 @@ def main():
         if load_json(ROOT / "data" / name) is None and not (ROOT / "data" / name).exists():
             err(f"data/{name} is missing")
 
+    site = load_json(ROOT / "data" / "site.json") or {}
+    hero = str(site.get("heroImage", "")).strip()
+    if hero and not (ROOT / hero).exists():
+        err(f"data/site.json: heroImage '{hero}' does not exist (put the file in media/home/)")
+    elif not hero:
+        warn("data/site.json: heroImage is empty, so the home page shows the purple gradient (see media/home/README.md)")
+
     seen = set()
     for entry in listings.get("listings", []):
         kind, slug = entry.get("type"), entry.get("slug")

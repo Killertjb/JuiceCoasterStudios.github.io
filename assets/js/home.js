@@ -17,6 +17,25 @@
         if (value) node.textContent = value;
     });
 
+    // Banner: data/site.json "heroImage" replaces the purple gradient. It is only applied once the
+    // picture has loaded, so a wrong path or missing file quietly keeps the gradient.
+    const heroPath = site && text(site.heroImage);
+    const hero = document.getElementById('home');
+    if (heroPath && hero) {
+        const overlay = Math.min(0.9, Math.max(0, Number(site.heroOverlay ?? 0.45) || 0));
+        const position = /^[a-z% 0-9.-]+$/i.test(text(site.heroPosition)) ? text(site.heroPosition) : 'center';
+        const url = root + heroPath.replace(/^\/+/, '');
+        const probe = new Image();
+        probe.onload = () => {
+            const shade = 'rgba(10, 14, 30, ' + overlay + ')';
+            hero.style.backgroundImage = 'linear-gradient(' + shade + ', ' + shade + '), url("' + encodeURI(url) + '")';
+            hero.style.backgroundSize = 'cover';
+            hero.style.backgroundPosition = position;
+            hero.style.backgroundRepeat = 'no-repeat';
+        };
+        probe.src = url;
+    }
+
     // Footer links (social accounts from data/site.json, plus email)
     const footerLinks = document.getElementById('footer-links');
     J.platformLinks(site && site.links, platforms).forEach(l =>
