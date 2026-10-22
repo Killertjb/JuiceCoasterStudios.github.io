@@ -15,6 +15,9 @@
     --footer-bg: #1f2937;
     --footer-text: #ffffff;
     --meta-theme: #ffffff;
+    --hero-panel: rgba(255, 255, 255, 0.82);          /* frosted panel behind the hero text when a banner picture is used */
+    --hero-panel-border: rgba(255, 255, 255, 0.65);
+    --hero-panel-shadow: 0 10px 40px rgba(15, 23, 42, 0.28);
 }
 
 html[data-theme="dark"] {
@@ -35,6 +38,9 @@ html[data-theme="dark"] {
     --footer-bg: #070b15;
     --footer-text: #e6eaf2;
     --meta-theme: #0b1120;
+    --hero-panel: rgba(11, 17, 32, 0.74);
+    --hero-panel-border: rgba(255, 255, 255, 0.14);
+    --hero-panel-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Smooth switch: theme.js adds .theme-transition for a moment while the theme changes, so every colour
@@ -155,7 +161,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { opacity: 0; transform: rotate
 .hero {
     position: relative;
     isolation: isolate;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #5668d8 0%, #6b3f9c 100%);   /* white text on this passes WCAG AA */
     color: #fff;
     padding: 110px 20px;
     text-align: center;
@@ -188,6 +194,35 @@ html[data-theme="dark"] .hero::before {
 
 .hero-content {
     max-width: 800px;
+    border-radius: 24px;
+    border: 1px solid transparent;
+}
+
+/* With a banner picture (class has-image, set by home.js) the text sits on a frosted panel in the theme's
+   colours, so it stays readable whatever part of the picture is behind it, in light and in dark mode. */
+.hero.has-image .hero-content {
+    padding: 2.25rem 2.75rem;
+    background: var(--hero-panel);
+    border-color: var(--hero-panel-border);
+    box-shadow: var(--hero-panel-shadow);
+    -webkit-backdrop-filter: blur(12px) saturate(1.2);
+    backdrop-filter: blur(12px) saturate(1.2);
+}
+
+.hero.has-image .hero-title,
+.hero.has-image .hero-subtitle,
+.hero.has-image .hero-description {
+    color: var(--text);
+    opacity: 1;
+}
+
+.hero.has-image .btn-light {
+    background: var(--accent);
+    color: #fff;
+}
+
+.hero.has-image .btn-light:hover {
+    background: var(--accent-dark);
 }
 
 .hero-title {
@@ -200,14 +235,12 @@ html[data-theme="dark"] .hero::before {
     font-size: 1.5rem;
     opacity: 0.95;
     margin-bottom: 0.5rem;
-    color: var(--text);
 }
 
 .hero-description {
     font-size: 1.1rem;
-    opacity: 0.9;
+    opacity: 1;
     margin-bottom: 2rem;
-    color: var(--text);
 }
 
 /* Sections */
@@ -410,6 +443,8 @@ html[data-theme="dark"] .hero::before {
 }
 
 @media (max-width: 600px) {
+    .hero.has-image .hero-content { padding: 1.5rem 1.25rem; border-radius: 18px; }
+
     /* Phones: logo and theme toggle share the first row, the links sit underneath */
     .navbar { padding: 0.6rem 0; }
     .nav-right { display: contents; }

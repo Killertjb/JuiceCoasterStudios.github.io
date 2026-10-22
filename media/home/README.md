@@ -17,7 +17,7 @@ Optional settings in the same file:
 
 | Setting | What it does | Default |
 |---------|--------------|---------|
-| `heroOverlay` | How much the picture is darkened so the white text stays readable. `0` = none, `0.9` = almost black | `0.45` |
+| `heroOverlay` | How much the whole picture is darkened. `0` = none, `0.9` = almost black. The text no longer depends on it: it sits on a frosted panel that follows the light/dark theme, so a bright, vivid banner works fine | `0.45` |
 | `heroPosition` | Which part of the picture stays in view when it is cropped: `center`, `top`, `bottom`, `left`, `right`, or two words such as `center top` | `center` |
 
 Leave `heroImage` empty (`""`) to go back to the purple gradient. If the file is missing or misspelled, the gradient is shown instead, and `python3 tools/check-site.py` reports the wrong path.
@@ -32,3 +32,6 @@ Leave `heroImage` empty (`""`) to go back to the purple gradient. If the file is
 
 ## Other files for this page
 Logos, a share image for link previews (WhatsApp, Facebook) and similar can go here too. File names are lowercase with hyphens and no spaces: `studio-banner.jpg`.
+
+## How the text stays readable
+When a banner is set, the studio name, tagline and services line sit on a frosted panel: a light panel with dark text in light mode, a dark panel with light text in dark mode. Because the panel sits between the picture and the words, any banner works, bright or dark. The panel colours are `--hero-panel`, `--hero-panel-border` and `--hero-panel-shadow` at the top of `assets/css/home.css`. Without a banner the hero is the purple gradient with white text.
