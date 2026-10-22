@@ -1,7 +1,7 @@
 {
   "_help": "Public contact details shown in the Contact section. Empty values are hidden. Set useSiteContact to true to reuse the studio's details from data/site.json for anything left empty (for services run by the studio itself). whatsapp is digits only with country code, e.g. 27821234567.",
   "useSiteContact": false,
-  "email": "info@ploeterprinting.com",
+  "email": "ploeterafrikaans@gmail.com",
   "phone": "+27 65 696 6766",
   "whatsapp": "+27 65 696 6766",
   "whatsappDisplay": "Ploeter-Printing Bussiness",
