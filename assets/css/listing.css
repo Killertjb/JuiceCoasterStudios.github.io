@@ -254,6 +254,35 @@ body[data-theme="light"] .hero {
     gap: 1.75rem;
 }
 
+/* Language groups inside the Music section */
+.release-group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 3rem 0 1.25rem;
+    font-size: 1.5rem;
+    scroll-margin-top: 90px;
+}
+
+.release-groups > .release-group-title:first-child {
+    margin-top: 1.5rem;
+}
+
+.release-count {
+    padding: 2px 12px;
+    border-radius: 50px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+a.filter-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .release {
     background: var(--card);
     border: 1px solid var(--border);
