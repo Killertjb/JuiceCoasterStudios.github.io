@@ -1,5 +1,5 @@
 {
-  "_help": "Every release. The page sorts them by releaseDate, newest first, and adds filter buttons (Albums / EPs / Singles) when there is more than one type. Copy the _example block into the releases list for each release. links: fill only the platforms that exist, empty ones are hidden; the key names come from data/platforms.json. Clicking the cover opens the platform named in primary (or the first link). cover is optional; a coloured placeholder is shown until you add one. tracks is optional (useful for albums).",
+  "_help": "Every release. The page sorts them by releaseDate, newest first, and adds filter buttons (Albums / EPs / Singles) when there is more than one type. Copy the _example block into the releases list for each release. links: fill only the platforms that exist, empty ones are hidden; the key names come from data/platforms.json. Clicking the cover opens the platform named in primary (or the first link). cover is optional; a coloured placeholder is shown until you add one. tracks is optional (useful for albums). language: optional. When releases have more than one language, the Music section is split into one group per language (in the order of the languages list at the top of this file), with jump buttons.",
   "_example": {
     "id": "song-title",
     "title": "Song Title",
@@ -23,31 +23,20 @@
           "spotify": ""
         }
       }
-    ]
+    ],
+    "language": "English"
   },
+  "_slots": "5 empty slots are left (release-21 to release-25). To fill one: type the title, set language (Afrikaans or English), type (single, ep or album), releaseDate (YYYY-MM-DD) and the platform links that exist, and save the cover as the file named in cover (change .jpg to .png in the path if needed). A slot with an empty title is not shown. Need more slots? Copy any block.",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
   "releases": [
-    {
-      "id": "u-wil-my-wil",
-      "title": "U Wil My Wil",
-      "type": "single",
-      "releaseDate": "2026-09-02",
-      "genre": "Gospel Folk",
-      "cover": "media/covers/u-wil-my-wil.jpg",
-      "primary": "spotify",
-      "links": {
-        "spotify": "",
-        "appleMusic": "",
-        "youtube": "",
-        "youtubeMusic": "",
-        "amazonMusic": "",
-        "soundcloud": "",
-        "audiomack": ""
-      }
-    },
     {
       "id": "ek-wil-na-u-luister",
       "title": "Ek Wil Na U Luister",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "2026-09-03",
       "genre": "Gospel Folk",
       "cover": "media/covers/ek-wil-na-u-luister.jpg",
@@ -63,12 +52,13 @@
       }
     },
     {
-      "id": "release-03",
-      "title": "",
+      "id": "u-wil-my-wil",
+      "title": "U Wil My Wil",
       "type": "single",
-      "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-03.jpg",
+      "language": "Afrikaans",
+      "releaseDate": "2026-09-02",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/u-wil-my-wil.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -81,12 +71,13 @@
       }
     },
     {
-      "id": "release-04",
-      "title": "",
+      "id": "die-grootheid-in-die-klein",
+      "title": "Die Grootheid In Die Klein",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-04.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/die-grootheid-in-die-klein.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -99,12 +90,13 @@
       }
     },
     {
-      "id": "release-05",
-      "title": "",
+      "id": "die-liefde-van-god",
+      "title": "Die Liefde Van God",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-05.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/die-liefde-van-god.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -117,12 +109,13 @@
       }
     },
     {
-      "id": "release-06",
-      "title": "",
+      "id": "lig",
+      "title": "Lig",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-06.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/lig.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -135,12 +128,13 @@
       }
     },
     {
-      "id": "release-07",
-      "title": "",
+      "id": "my-siel-is-gerig-op-u",
+      "title": "My Siel Is Gerig Op U",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-07.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/my-siel-is-gerig-op-u.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -153,12 +147,13 @@
       }
     },
     {
-      "id": "release-08",
-      "title": "",
+      "id": "oor-alles-heen",
+      "title": "Oor Alles Heen",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-08.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/oor-alles-heen.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -171,12 +166,13 @@
       }
     },
     {
-      "id": "release-09",
-      "title": "",
+      "id": "stukkie-hemel",
+      "title": "Stukkie Hemel",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-09.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/stukkie-hemel.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -189,12 +185,13 @@
       }
     },
     {
-      "id": "release-10",
-      "title": "",
+      "id": "u-goeie-hand",
+      "title": "U Goeie Hand",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-10.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/u-goeie-hand.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -207,12 +204,13 @@
       }
     },
     {
-      "id": "release-11",
-      "title": "",
+      "id": "u-is-die-anker",
+      "title": "U Is Die Anker",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-11.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/u-is-die-anker.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -225,12 +223,13 @@
       }
     },
     {
-      "id": "release-12",
-      "title": "",
+      "id": "vuur-van-bo",
+      "title": "Vuur Van Bo",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-12.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/vuur-van-bo.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -243,12 +242,13 @@
       }
     },
     {
-      "id": "release-13",
-      "title": "",
+      "id": "wyd-my-die-pad-na-god-se-hart",
+      "title": "Wyd My Die Pad Na God Se Hart",
       "type": "single",
+      "language": "Afrikaans",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-13.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/wyd-my-die-pad-na-god-se-hart.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -261,12 +261,13 @@
       }
     },
     {
-      "id": "release-14",
-      "title": "",
+      "id": "anywhere-with-you",
+      "title": "Anywhere With You",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-14.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/anywhere-with-you.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -279,12 +280,13 @@
       }
     },
     {
-      "id": "release-15",
-      "title": "",
+      "id": "country-kind-of-grace",
+      "title": "Country Kind of Grace",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-15.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/country-kind-of-grace.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -297,12 +299,13 @@
       }
     },
     {
-      "id": "release-16",
-      "title": "",
+      "id": "grace-on-teh-open-road",
+      "title": "Grace on the Open Road",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-16.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/grace-on-teh-open-road.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -315,12 +318,13 @@
       }
     },
     {
-      "id": "release-17",
-      "title": "",
+      "id": "holy-spirit-activate",
+      "title": "Holy Spirit Activate",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-17.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/holy-spirit-activate.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -333,12 +337,13 @@
       }
     },
     {
-      "id": "release-18",
-      "title": "",
+      "id": "jesus-you-are-holy",
+      "title": "Jesus You Are Holy",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-18.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/jesus-you-are-holy.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -351,12 +356,13 @@
       }
     },
     {
-      "id": "release-19",
-      "title": "",
+      "id": "keep-praying",
+      "title": "Keep Praying",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-19.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/keep-praying.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -369,12 +375,32 @@
       }
     },
     {
-      "id": "release-20",
-      "title": "",
+      "id": "lion-of-judah",
+      "title": "Lion of Judah",
       "type": "single",
+      "language": "English",
       "releaseDate": "",
-      "genre": "",
-      "cover": "media/covers/release-20.jpg",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/lion-of-judah.jpg",
+      "primary": "spotify",
+      "links": {
+        "spotify": "",
+        "appleMusic": "",
+        "youtube": "",
+        "youtubeMusic": "",
+        "amazonMusic": "",
+        "soundcloud": "",
+        "audiomack": ""
+      }
+    },
+    {
+      "id": "stronger-than-the-battle",
+      "title": "Stronger Than the Battle",
+      "type": "single",
+      "language": "English",
+      "releaseDate": "",
+      "genre": "Gospel Folk",
+      "cover": "media/covers/stronger-than-the-battle.jpg",
       "primary": "spotify",
       "links": {
         "spotify": "",
@@ -390,6 +416,7 @@
       "id": "release-21",
       "title": "",
       "type": "single",
+      "language": "",
       "releaseDate": "",
       "genre": "",
       "cover": "media/covers/release-21.jpg",
@@ -408,6 +435,7 @@
       "id": "release-22",
       "title": "",
       "type": "single",
+      "language": "",
       "releaseDate": "",
       "genre": "",
       "cover": "media/covers/release-22.jpg",
@@ -426,6 +454,7 @@
       "id": "release-23",
       "title": "",
       "type": "single",
+      "language": "",
       "releaseDate": "",
       "genre": "",
       "cover": "media/covers/release-23.jpg",
@@ -444,6 +473,7 @@
       "id": "release-24",
       "title": "",
       "type": "single",
+      "language": "",
       "releaseDate": "",
       "genre": "",
       "cover": "media/covers/release-24.jpg",
@@ -462,6 +492,7 @@
       "id": "release-25",
       "title": "",
       "type": "single",
+      "language": "",
       "releaseDate": "",
       "genre": "",
       "cover": "media/covers/release-25.jpg",
@@ -476,6 +507,5 @@
         "audiomack": ""
       }
     }
-  ],
-  "_slots": "25 empty slots, release-01 to release-25. To fill one: (1) type the title, (2) set type to single, ep or album, (3) add releaseDate as YYYY-MM-DD, (4) paste the platform links that exist and leave the rest empty, (5) save the cover art as the file named in cover (change .jpg to .png in the cover path if needed). A slot with an empty title is not shown on the page, so unused slots can stay. Slot order does not matter, the page sorts by releaseDate (newest first). Need more slots? Copy any slot block. Need another platform? Add its key from data/platforms.json to links."
+  ]
 }

@@ -62,12 +62,16 @@ Every JSON file also carries a `_help` note and (where useful) an `_example` blo
 | `title` | Release title |
 | `type` | `single`, `ep`, `album`, `compilation`, `remix` or `live`. Filter buttons appear automatically |
 | `releaseDate` | `YYYY-MM-DD`. Newest first; a future date shows "Coming soon" |
+| `language` | Optional, for example `Afrikaans` or `English`. See "Languages" below |
 | `genre` | Optional |
 | `cover` | `media/covers/<id>.jpg`. A coloured placeholder is shown if missing |
 | `links` | `{ "spotify": "...", "appleMusic": "...", "youtube": "..." }`. Empty ones are hidden. Any key from `platforms.json` works |
 | `primary` | Which platform the cover itself opens (default: the first link) |
 | `tracks` | Optional: `[{ "title", "links": { ... } }]` for an expandable tracklist |
 | `icon` | Optional emoji on the placeholder cover |
+
+
+**Languages:** give a release a `language` (for example `"Afrikaans"` or `"English"`). When a page has more than one language, the Music section is split into one headed group per language with jump buttons at the top. Add `"languages": ["Afrikaans", "English"]` next to `releases` to choose the order. Releases with no language go under "More music". With only one language (or none) the page shows a single list, as before.
 
 ### `videos.json`
 `videos`: `{ "title", "youtubeId", "url", "thumbnail", "note" }`. With a `youtubeId` the link and thumbnail are automatic.

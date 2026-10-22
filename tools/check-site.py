@@ -130,10 +130,15 @@ def check_listing(kind: str, slug: str):
     no_cover = [r.get("title", "?") for r in releases if not str(r.get("cover", "")).strip()]
     no_date = [r.get("title", "?") for r in releases if not r.get("releaseDate")]
     sample = [r.get("title", "?") for r in releases if r.get("sample")]
+    langs = [str(r.get("language", "")).strip() for r in releases]
+    if any(langs) and not all(langs):
+        missing = [r.get("title", "?") for r, l in zip(releases, langs) if not l]
+        warn(f"{label}: {len(missing)} release(s) have no language while others do (they are listed under 'More music'): " + ", ".join(missing[:5]))
     for what, titles in (("have no platform links yet", no_links), ("have no cover art yet", no_cover),
                          ("have no releaseDate", no_date), ("are sample content to replace", sample)):
         if titles:
-            warn(f"{label}: {len(titles)} of {len(releases)} release(s) {what}: " + ", ".join(titles))
+            shown = ", ".join(titles[:5]) + (f" and {len(titles) - 5} more" if len(titles) > 5 else "")
+            warn(f"{label}: {len(titles)} of {len(releases)} release(s) {what}: " + shown)
 
     contact = data.get("contact/contact.json") or {}
     if "your@email.com" in json.dumps(contact):

@@ -129,9 +129,32 @@
         if (!items.length) return null;
         items.sort((a, b) => String(b.releaseDate || b.year || '').localeCompare(String(a.releaseDate || a.year || '')));
 
-        const grid = el('div', { class: 'release-grid' });
+        /* Language groups: when releases carry a "language" (and there is more than one), the Music section is
+           split into one headed group per language. "languages" at the top of releases.json sets their order. */
+        const slug = v => String(v).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'other';
+        const langOf = r => text(r.language);
+        const known = [];
+        [...list(fileA, 'languages').map(text), ...items.map(langOf)].forEach(l => {
+            if (l && !known.some(k => k.toLowerCase() === l.toLowerCase())) known.push(l);
+        });
+        const grouped = known.length > 1 || (known.length === 1 && items.some(r => !langOf(r)));
+        const groups = grouped
+            ? [...known.map(l => ({ id: 'music-' + slug(l), label: l, items: items.filter(r => langOf(r).toLowerCase() === l.toLowerCase()) })),
+               { id: 'music-more', label: 'More music', items: items.filter(r => !langOf(r)) }].filter(g => g.items.length)
+            : [{ id: 'music-all', label: '', items }];
+
+        const body = el('div', { class: 'release-groups' });
         const filters = el('div', { class: 'filters', role: 'group', 'aria-label': 'Filter releases' });
-        const render = kind => grid.replaceChildren(...items.filter(r => kind === 'all' || kindOf(r) === kind).map(releaseCard));
+        const render = kind => {
+            const nodes = [];
+            groups.forEach(g => {
+                const shown = g.items.filter(r => kind === 'all' || kindOf(r) === kind);
+                if (!shown.length) return;
+                if (grouped) nodes.push(el('h3', { class: 'release-group-title', id: g.id }, g.label, el('span', { class: 'release-count', text: String(shown.length) })));
+                nodes.push(el('div', { class: 'release-grid' }, shown.map(releaseCard)));
+            });
+            body.replaceChildren(...nodes);
+        };
 
         const order = ['album', 'ep', 'single', 'compilation', 'remix', 'live'];
         const present = [...new Set(items.map(kindOf))].sort((a, b) => (order.indexOf(a) + 99) % 99 - (order.indexOf(b) + 99) % 99);
@@ -147,8 +170,12 @@
                 filters.append(btn);
             });
         }
+        // Buttons that jump to each language group
+        const jump = grouped && el('nav', { class: 'filters jump-links', 'aria-label': 'Jump to a language' },
+            groups.map(g => el('a', { class: 'filter-btn', href: '#' + g.id, text: g.label + ' (' + g.items.length + ')' })));
+
         render('all');
-        return section('releases', 'Music', 'Tap a cover or pick your platform to listen', [filters.children.length > 0 && filters, grid]);
+        return section('releases', 'Music', 'Tap a cover or pick your platform to listen', [jump, filters.children.length > 0 && filters, body]);
     }
 
     function videosSection() {
